@@ -6,6 +6,9 @@ import { AllBooks } from './assets';
 import { extroCover } from './assets';
 
 const App = () => (
+
+
+
   <div className='bg-primary w-full overflow-hidden snap-y'>
 
     
