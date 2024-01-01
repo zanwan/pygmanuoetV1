@@ -1,9 +1,10 @@
-import React from 'react'
+
 
 import {Button} from './index'
 import { features } from '../constants'
 
 const HeroFeature1 = () => {
+  /* 首圖與簡介 */
   return (
     <div className='w-full flex py-6 justify-between items-center'>
 

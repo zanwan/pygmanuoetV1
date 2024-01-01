@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {yangnuSocialMedia} from '../constants'
 import {fisfisaSocialMedia} from '../constants'
 import {publisherSocialMedia} from '../constants'

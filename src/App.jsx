@@ -1,6 +1,6 @@
-import React from 'react';
+
 import styles from './style';
-import { Navbar,Button,HeroFeature1, Feature2, SectionTitle, ReviewCard, ProductFeature,BookCard,Designfeature, AboutAuthor, AuthorQuote, Recitation, Purchase, Question, Footer } from './components';
+import { Navbar,HeroFeature1, Feature2, SectionTitle, ReviewCard, ProductFeature,BookCard,Designfeature, AboutAuthor, AuthorQuote, Recitation, Purchase, Question, Footer } from './components';
 
 import { AllBooks } from './assets';
 import { extroCover } from './assets';

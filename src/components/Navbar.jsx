@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 import {navLinks} from '../constants'
-import {menu, close} from '../assets'
+import {menu, close, YangMuTitle} from '../assets'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -11,8 +11,8 @@ const Navbar = () => {
       
       <div className='flex items-center focus:cursor-pointer'>
         <a href="#home">
-        <h1 className='font-notoSerifTC text-2xl font-bold text-black ml-2'>楊牧全集
-        </h1>
+        <img src={YangMuTitle} alt='楊牧全集' className='h-[40px] object-contain'/>
+        <h1 className='font-notoSerifTC text-black invisible h-0 overflow-hidden'>楊牧全集</h1>
         </a>
       </div>
 

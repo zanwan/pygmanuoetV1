@@ -1,3 +1,5 @@
+import YangMuTitle from "./YangMuTitle.webp";
+
 import feature1img from "./feature1img.webp";
 import feature2img from "./feature2img.webp";
 import menu from "./menu.svg";
@@ -16,7 +18,7 @@ import book4Cover from "./book4Cover.png";
 import book5Cover from "./book5Cover.png";
 import extroCover from "./extroCover.png";
 
-import ProductOpen from "./ProductOpen.png";
+import ProductOpen from "./ProductOpen.webp";
 import CoverReveal from "./CoverReveal.png";
 
 import youngmu from "./youngmu.png";
@@ -28,4 +30,4 @@ import poemTub4 from "./poemTub4.jpg";
 
 import AllBooks from "./AllBooks.png";
 
-export { feature1img, feature2img, menu, close, Avatar1, Avatar2, Avatar3, Avatar4, Avatar5, book1Cover, book2Cover, book3Cover, book4Cover, book5Cover, extroCover, ProductOpen, CoverReveal, youngmu, poemTub1, poemTub2, poemTub3, poemTub4, AllBooks  };
+export { feature1img, feature2img, menu, close, Avatar1, Avatar2, Avatar3, Avatar4, Avatar5, book1Cover, book2Cover, book3Cover, book4Cover, book5Cover, extroCover, ProductOpen, CoverReveal, youngmu, poemTub1, poemTub2, poemTub3, poemTub4, AllBooks,YangMuTitle  };

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SectionTitle = ({title}) => {
   return (
     <div className='w-full flex justify-between my-16'>

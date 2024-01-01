@@ -14,4 +14,6 @@ import Purchase from "./Purchase";
 import Question from "./Question";
 import Footer from "./Footer";
 
-export { Navbar, Button , HeroFeature1, Feature2, SectionTitle, ReviewCard, ProductFeature, BookCard, Designfeature, AboutAuthor, AuthorQuote, Recitation, Purchase, Question, Footer };
+import ReviewPost from "./ReviewPost";
+
+export { Navbar, Button , HeroFeature1, Feature2, SectionTitle, ReviewCard, ProductFeature, BookCard, Designfeature, AboutAuthor, AuthorQuote, Recitation, Purchase, Question, Footer, ReviewPost };
