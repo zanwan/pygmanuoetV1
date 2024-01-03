@@ -16,4 +16,21 @@ import Footer from "./Footer";
 
 import ReviewPost from "./ReviewPost";
 
-export { Navbar, Button , HeroFeature1, Feature2, SectionTitle, ReviewCard, ProductFeature, BookCard, Designfeature, AboutAuthor, AuthorQuote, Recitation, Purchase, Question, Footer, ReviewPost };
+export {
+  Navbar,
+  Button,
+  HeroFeature1,
+  Feature2,
+  SectionTitle,
+  ReviewCard,
+  ProductFeature,
+  BookCard,
+  Designfeature,
+  AboutAuthor,
+  AuthorQuote,
+  Recitation,
+  Purchase,
+  Question,
+  Footer,
+  ReviewPost,
+};
