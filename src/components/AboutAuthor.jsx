@@ -3,9 +3,9 @@ import { authorInfo } from "../constants";
 
 const AboutAuthor = () => {
   return (
-    <div className="w-full bg-secondary px-16 py-8  border-black border-[1px] border-solid ">
-      <div className="flex justify-between content-center mt-8">
-        <div className="hidden md:w-1/2 md:block">
+    <div className="w-full px-16 py-4 ">
+      <div className="flex flex-col md:flex-row justify-center content-center md:mt-8">
+        <div className="w-[250px] mx-auto mb-10 md:w-[350px] md:block md:mb-8">
           <img
             src={youngmu}
             alt="youngmu"
@@ -14,7 +14,7 @@ const AboutAuthor = () => {
           />
         </div>
 
-        <p className="w-full md:w-1/2 my-auto ml-8 text-justify font-notoSerifTC text-base">
+        <p className="w-full md:w-1/2 my-auto md:ml-8 text-justify font-notoSerifTC text-lg">
           {authorInfo[0].content.split("\n").map((line, index) => (
             <span key={index}>
               {line}

@@ -1,21 +1,26 @@
 import { article } from "../articles/article";
+import { close } from "../assets";
 
-export const ReviewPost = ({ closeModal }) => {
+export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
   return (
     <div
-      className="fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-80 flex items-center justify-center cursor-pointer"
+      className="fixed z-20 inset-0 overflow-y-auto bg-black bg-opacity-80 flex items-center justify-center cursor-alias pt-[12vh]"
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
       onClick={closeModal}
     >
       <div
-        className="relative bg-[#EAE5DB] p-6 rounded shadow-lg max-w-4xl w-full overflow-y-auto h-[80vh] mt-16 cursor-auto px-32"
+        className="relative bg-secondary pt-[10vh] pb-[10vh] border-black border-[2px] border-solid max-w-4xl w-full overflow-y-auto h-[100vh] mt-8 cursor-auto px-16"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-2xl font-bold mb-4">讀楊牧全集二三事</h2>
+        <div className="flex flex-col justify-between align-middle font-notoSerifTC mb-8">
+          <h2 className="text-5xl font-bold ">{article.articleTitle}</h2>
+          <p className="text-xl mt-4">{article.name}</p>
+        </div>
+
         <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify">
-          {article[0].content.split("\n").map((line, index) => (
+          {article.article.split("\n").map((line, index) => (
             <p key={index} className="indent-8">
               {line}
               <br />
@@ -26,19 +31,25 @@ export const ReviewPost = ({ closeModal }) => {
 
         <button
           type="button"
-          className="absolute top-2 right-2 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-white text-base font-medium text-black hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+          className="absolute top-4 right-4 inline-flex justify-center rounded-full border border-transparent px-4 py-4 font-light text-black hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white-500 sm:ml-3 sm:w-auto sm:text-sm"
           onClick={closeModal}
         >
-          X
+          <img
+            src={close}
+            alt="close"
+            className="w-[32px] h-[32px] object-contain"
+          />
         </button>
 
-        <button
-          type="button"
-          className="mt-4 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-white text-base font-medium text-black hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
-          onClick={closeModal}
-        >
-          關閉
-        </button>
+        <div className="flex justify-center text-center">
+          <button
+            type="button"
+            className="mt-4 rounded-md border border-transparent shadow-sm px-4 py-2 bg-white text-base font-medium text-black hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 "
+            onClick={closeModal}
+          >
+            關閉
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { Avatar1 } from "../assets";
 
 import ReviewPost from "./ReviewPost";
 
-const ReviewCard = () => {
+const ReviewCard = ({ reviews, bgColor }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -19,42 +19,61 @@ const ReviewCard = () => {
   };
 
   return (
-    <div className="w-full bg-secondary px-4  border-black border-[1px] border-solid">
-      <div className="flex-col justify-start items-start px-4 py-8">
-        <p className="font-notoSerifTC font-normal text-4xl ">社會思索</p>
-        <p className="font-notoSerifTC font-normal text-base pt-8 text-justify">
-          楊牧的作品展示了他對台灣社會變遷的敏銳觀察和對人性多面的探索。他的詩歌和散文不僅具有高度的藝術價值，也是反映台灣社會歷史的重要文獻。讀楊牧，是為了更好地理解台灣的文學和社會，也是為了探索文學的多元性和可能性。豐富的想像力和深刻的人文關懷。他的文字簡練而深刻，常常讓我在閱讀中得到啟示。讀楊牧，是因為他的作品能夠挑戰我們的思想，促使我們反思生活和社會的各個面向。
-        </p>
+    <div
+      className="w-full flex flex-col justify-between border-black border-[1px] border-solid"
+      style={{ backgroundColor: bgColor }}
+    >
+      <p className="px-8 pt-6 font-notoSerifTC font-semibold text-3xl tracking-wide subpixel-antialiased">
+        {reviews.header}
+      </p>
+      <p className="px-8 pt-2 font-notoSerifTC font-normal text-base text-justify tracking-wide subpixel-antialiased">
+        {reviews.content}
+      </p>
 
-        <button
-          className="font-notoSerifTC font-normal text-base text-right underline"
-          onClick={() => {
-            setIsOpen(true);
-            openModal();
-          }}
-        >
-          閱讀更多
-        </button>
+      {reviews.fullReview && (
+        <div className="flex flex-row justify-end pr-8 pt-4">
+          <button
+            className="font-notoSerifTC font-medium text-base text-right no-underline bg-white px-6 py-1 rounded-md hover:bg-secondary hover:text-black transition duration-300 ease-in-out"
+            onClick={() => {
+              setIsOpen(true);
+              openModal();
+            }}
+          >
+            閱讀更多
+          </button>
+        </div>
+      )}
 
-        <div className="flex justify-stretch w-full pt-8 items-center">
-          <div className="font-notoSerifTC font-normal text-base whitespace-nowrap">
-            林志明・高中老師
+      {/* 名條 */}
+      <div className="flex justify-stretch w-full items-center bg-secondary px-8 mt-4 py-4">
+        <img
+          className="w-[50px] h-[50px] object-contain rounded-full"
+          src={reviews.avatar}
+          alt="teacher1"
+          loading="lazy"
+        />
+        <div className="flex flex-col ml-4">
+          <div className="font-notoSerifTC text-base font-medium">
+            {reviews.name}
           </div>
-          <hr className="border-1 border-black border-solid w-full mx-2" />
-          <img
-            className="w-[60px] h-[60px] object-contain"
-            src={Avatar1}
-            alt="teacher1"
-            loading="lazy"
-          />
+          {reviews.nameCard && (
+            <div className="font-notoSerifTC font-normal text-xs">
+              {reviews.nameCard.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
+
       {isOpen && (
         <ReviewPost
           closeModal={() => {
             setIsOpen(false);
             closeModal();
           }}
+          article={reviews}
+          articleBgColor={bgColor}
         />
       )}
     </div>

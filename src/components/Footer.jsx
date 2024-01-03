@@ -3,6 +3,8 @@ import { fisfisaSocialMedia } from "../constants";
 import { publisherSocialMedia } from "../constants";
 import { contact } from "../constants";
 
+import { hongfang, fisfisa } from "../assets/index";
+
 const Footer = () => {
   return (
     <div className="flex justify-center px-16 md:px-0 md:w-1/2 mx-auto my-16">
@@ -12,30 +14,26 @@ const Footer = () => {
           <p className="text-white font-notoSerifTC">
             {yangnuSocialMedia[0].title}
           </p>
-          <p className="text-white font-notoSerifTC">
+          {/* <p className="text-white font-notoSerifTC">
             {yangnuSocialMedia[1].title}
           </p>
           <p className="text-white font-notoSerifTC">
             {yangnuSocialMedia[2].title}
-          </p>
+          </p> */}
         </a>
       </div>
 
       <div className="flex-col justify-start w-1/3">
         <p className="text-white text-md">出版社</p>
         <a href={publisherSocialMedia[0].url} target="_blank" rel="noreferrer">
-          <p className="text-white font-notoSerifTC">
-            {publisherSocialMedia[0].title}
-          </p>
+          <img src={hongfang} className="w-[120px] mt-2" />
         </a>
       </div>
 
       <div className="flex-col justify-start w-1/3">
         <p className="text-white text-md">行銷協力</p>
         <a href={fisfisaSocialMedia[0].url} target="_blank" rel="noreferrer">
-          <p className="text-white font-notoSerifTC">
-            {fisfisaSocialMedia[0].title}
-          </p>
+          <img src={fisfisa} className="w-[100px] mt-2" />
         </a>
       </div>
     </div>
