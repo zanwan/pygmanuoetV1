@@ -21,7 +21,7 @@ const Recitation = () => {
   return (
     <>
       <div className="flex-col content-center justify-center">
-        <p className="text-center text-black font-notoSerifTC text-2xl mx-4 md:mx-40 leading-relaxed">
+        <p className="text-center text-black font-notoSerifTC text-lg md:text-2xl mx-4 md:mx-40 leading-relaxed">
           目宿媒體製作出品
           <br />
           《我們在島嶼朗讀》系列短片

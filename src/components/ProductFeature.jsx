@@ -20,7 +20,7 @@ const ProductFeature = () => {
       <img
         src={ProductOpen}
         alt="hero"
-        className="w-full mt-[-2rem] md:w-[60vw] md:pl-0 md:pr-0 md:mr-0"
+        className="w-full mt-[-2rem] ml-[-8px] md:ml-0 md:w-2/3 md:pl-0 md:pr-0 md:mr-0"
         loading="lazy"
       />
     </div>
