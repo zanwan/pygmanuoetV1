@@ -11,6 +11,7 @@ import Avatar3 from "./陳義芝.webp";
 import Avatar4 from "./鄭毓瑜.webp";
 import Avatar5 from "./鄭樹森.webp";
 import Avatar6 from "./匿名.webp";
+import Avatar7 from "./葉步榮.webp";
 
 import book1Cover from "./book1Cover.png";
 import book2Cover from "./book2Cover.png";
@@ -40,6 +41,18 @@ import BookSet5 from "./集外集套書.webp";
 import hongfang from "./洪範書店.webp";
 import fisfisa from "./目宿媒體.webp";
 
+import grow from "./詩意蔓生.webp";
+import poemquote1 from "./poemquote1.svg";
+import boat from "./SVG/瓶中稿插圖.svg";
+import toungPoem from "./唐詩的一角.webp";
+import editorsLetter from "./EditorsLetter.svg";
+
+import editorNamebg from "./葉步榮bg.svg";
+
+import reviewNote1 from "./reviewNote-1.svg";
+import reviewNote2 from "./reviewNote-2.svg";
+import reviewNote3 from "./reviewNote-3.svg";
+
 export {
   feature1img,
   feature2img,
@@ -51,6 +64,7 @@ export {
   Avatar4,
   Avatar5,
   Avatar6,
+  Avatar7,
   book1Cover,
   book2Cover,
   book3Cover,
@@ -73,4 +87,13 @@ export {
   BookSet5,
   hongfang,
   fisfisa,
+  grow,
+  poemquote1,
+  boat,
+  toungPoem,
+  editorsLetter,
+  editorNamebg,
+  reviewNote1,
+  reviewNote2,
+  reviewNote3,
 };

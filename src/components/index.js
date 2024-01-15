@@ -13,6 +13,8 @@ import Recitation from "./Recitation";
 import Purchase from "./Purchase";
 import Question from "./Question";
 import Footer from "./Footer";
+import { PoemBLock } from "./PoemBLock";
+import EditorLetter from "./EditorLetter";
 
 import ReviewPost from "./ReviewPost";
 
@@ -33,4 +35,6 @@ export {
   Question,
   Footer,
   ReviewPost,
+  PoemBLock,
+  EditorLetter,
 };

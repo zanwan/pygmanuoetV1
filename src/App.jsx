@@ -15,10 +15,18 @@ import {
   Purchase,
   Question,
   Footer,
+  PoemBLock,
+  EditorLetter,
 } from "./components/index";
 
-import { AllBooks } from "./assets";
-import { extroCover } from "./assets";
+import {
+  AllBooks,
+  extroCover,
+  grow,
+  reviewNote1,
+  reviewNote2,
+  reviewNote3,
+} from "./assets";
 
 import { reviews, product } from "./constants/index.js";
 
@@ -32,9 +40,15 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary md:pl-12  ${styles.flexStart}`} id="home">
+    <div className={`bg-primary  ${styles.flexStart}`} id="home">
       <div className={`${styles.boxWidth}`}>
         <HeroFeature1 />
+      </div>
+    </div>
+
+    <div className={`bg-primary  ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <PoemBLock />
       </div>
     </div>
 
@@ -46,29 +60,89 @@ const App = () => (
 
     <div
       className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`}
-      id="features"
+      id="editor"
     >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"為何讀楊牧？"} />
+        <SectionTitle title={"主編掛劍"} />
       </div>
     </div>
 
     <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <EditorLetter reviews={reviews[0]} bgColor={"#F1E8E2"} />
+      </div>
+    </div>
+
+    <div
+      className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`}
+      id="features"
+    >
+      <div className={`${styles.boxWidth}`}>
+        <SectionTitle title={"眾家推崇"} />
+        <div className="mt-[-62px] mx-auto w-6/12 text-center text-2xl text-yellow-900 font-notoSerifTC tracking-wide subpixel-antialiased leading-relaxed">
+          <br />
+          奚密・張力・許又方・陳育虹
+          <br />
+          陳芳明・陳義芝・童子賢・須文蔚・楊照
+          <br />
+          楊澤・
+          <span
+            className=" font-serif leading-3 align-baseline"
+            style={{ fontSize: "1.6rem" }}
+          >
+            瘂弦
+          </span>
+          ・鄭毓瑜・鄭樹森・謝旺霖
+          <br />
+          <span className="text-black text-lg">（按姓氏筆畫排序）</span>
+        </div>
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.flexStart} mt-12`}>
       <div className={`${styles.boxWidth} ${styles.paddingX}`}>
-        <div className="grid md:grid-cols-2 gap-4">
-          <ReviewCard reviews={reviews[0]} bgColor={"#F1E8E2"} />
-          <ReviewCard reviews={reviews[1]} bgColor={"#F1EDE2"} />
+        <div className="grid md:grid-cols-2 gap-2">
+          <ReviewCard
+            reviews={reviews[0]}
+            bgColor={"#F1E8E2"}
+            bgStyle={reviewNote1}
+          />
+          <ReviewCard
+            reviews={reviews[1]}
+            bgColor={"#F1EDE2"}
+            bgStyle={reviewNote2}
+          />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 mt-4">
-          <ReviewCard reviews={reviews[2]} bgColor={"#E4EAEA"} />
-          <ReviewCard reviews={reviews[3]} bgColor={"#DFE6DD"} />
-          <ReviewCard reviews={reviews[4]} bgColor={"#E4E4EA"} />
+        <div className="grid md:grid-cols-3 gap-2 mt-4">
+          <ReviewCard
+            reviews={reviews[2]}
+            bgColor={"#E4EAEA"}
+            bgStyle={reviewNote3}
+          />
+          <ReviewCard
+            reviews={reviews[3]}
+            bgColor={"#DFE6DD"}
+            bgStyle={reviewNote1}
+          />
+          <ReviewCard
+            reviews={reviews[4]}
+            bgColor={"#E4E4EA"}
+            bgStyle={reviewNote2}
+          />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4 mt-4">
-          <ReviewCard reviews={reviews[5]} bgColor={"#EAE1E6"} />
-          <ReviewCard reviews={reviews[6]} bgColor={"#DEE0E7"} />
+        <div className="grid md:grid-cols-2 gap-2 mt-4">
+          <ReviewCard
+            reviews={reviews[5]}
+            bgColor={"#EAE1E6"}
+            bgStyle={reviewNote3}
+          />
+          <ReviewCard
+            reviews={reviews[6]}
+            bgColor={"#DEE0E7"}
+            bgStyle={reviewNote1}
+          />
         </div>
       </div>
     </div>
@@ -78,7 +152,7 @@ const App = () => (
       id="product"
     >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"文字是唯一的條件"} />
+        <SectionTitle title={"套書規格"} />
       </div>
     </div>
 

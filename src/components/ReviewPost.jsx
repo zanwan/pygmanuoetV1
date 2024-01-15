@@ -15,7 +15,7 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col justify-between align-middle font-notoSerifTC mb-8">
-          <h2 className="text-4xl md:text-5xl font-bold ">
+          <h2 className="font-[ChenYuluoyan] text-4xl md:text-5xl font-bold ">
             {article.articleTitle}
           </h2>
           <p className="text-xl mt-4">{article.name}</p>

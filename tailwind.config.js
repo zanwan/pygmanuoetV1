@@ -7,13 +7,13 @@ module.exports = {
       colors: {
         primary: "#EAE5DB",
         secondary: "#F8F3EB",
-        lightGreen: '#85BDAB',
-        darkGreen: '#566F4A',
+        lightGreen: "#85BDAB",
+        darkGreen: "#566F4A",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
-        notoSerifTC: ["Noto Serif TC", "sans-serif"],
+        notoSerifTC: ["Noto Serif TC", "sans-serif", "serif"],
       },
     },
     screens: {
