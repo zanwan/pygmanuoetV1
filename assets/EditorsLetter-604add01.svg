@@ -1,10 +1,10 @@
-<svg width="1393" height="1019" viewBox="0 0 1393 1019" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.65728 159.778L136.13 24.2598L1260.73 22.2374L1367.93 175.959L1370.66 990.578L19.3412 1014.02L4.65728 159.778Z" fill="url(#paint0_linear_442_579)"/>
+<svg width="1393" height="1020" viewBox="0 0 1393 1020" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.1854 154.461L18.4381 41.8256L378.87 19.3L1009.63 19.3L1374.56 41.8265L1365.55 165.725L1370.66 991.577L19.3406 1015.02L16.1854 154.461Z" fill="url(#paint0_linear_442_579)"/>
 <g filter="url(#filter0_d_442_579)">
-<path d="M36.1356 165.633L158.371 40.5543L1243.83 49.6644L1377.6 214.436L1375.71 1015.07L24.4239 989.649L36.1356 165.633Z" fill="url(#paint1_linear_442_579)"/>
+<path d="M36.46 167.978L61.2397 28.3108L777.597 50.8376L1315.99 23.8052L1352.04 445.06L1375.7 1016.07L24.4234 990.649L36.46 167.978Z" fill="url(#paint1_linear_442_579)"/>
 </g>
 <defs>
-<filter id="filter0_d_442_579" x="19.4238" y="35.5544" width="1361.17" height="982.517" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_442_579" x="19.4233" y="18.8052" width="1359.28" height="1000.27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="-1"/>
@@ -14,12 +14,12 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_442_579"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_442_579" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_442_579" x1="675.463" y1="40.656" x2="693.845" y2="1003.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_442_579" x1="675.462" y1="41.6614" x2="693.844" y2="1004.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFFCF8"/>
 <stop offset="0.735" stop-color="#F8F3EB"/>
 <stop offset="1" stop-color="#EAE5DB"/>
 </linearGradient>
-<linearGradient id="paint1_linear_442_579" x1="715.304" y1="40.6421" x2="698.867" y2="1003.52" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_442_579" x1="715.304" y1="41.6413" x2="698.867" y2="1004.52" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFFCF8"/>
 <stop offset="0.24" stop-color="#F8F3EB"/>
 <stop offset="0.865" stop-color="#EAE5DB"/>
