@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { poemTub1, poemTub2, poemTub3, poemTub4 } from "../assets";
-import { VideoContener } from "./VideoContener";
 import VideoEmbed from "./VideoEmbed";
 
 const Recitation = () => {
@@ -21,7 +20,7 @@ const Recitation = () => {
   return (
     <>
       <div className="flex-col content-center justify-center">
-        <p className="text-center text-black font-notoSerifTC text-lg md:text-2xl mx-4 md:mx-40 leading-relaxed">
+        <p className="text-center text-black font-notoSerifTC text-lg md:text-2xl mt-[-40px] md:mx-40 leading-loose tracking-widest">
           目宿媒體製作出品
           <br />
           《我們在島嶼朗讀》系列短片

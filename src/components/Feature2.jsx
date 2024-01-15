@@ -26,7 +26,7 @@ const HeroFeature1 = () => {
               className="absolute left-0 top-6  h-[50px]"
             ></img>
             <div className="h-[180px]">
-              <p className="absolute left-6 top-1 font-notoSerifTC mt-10 text-xl font-normal text-black ml-2 text-left tracking-wider	leading-relaxed">
+              <p className="absolute left-6 top-1 font-notoSerifTC mt-10 text-xl font-normal text-black ml-2 text-left tracking-wider	leading-relaxed ">
                 三十冊跨文類大全集
                 <br />
                 文學界權威校編舊作新篇
@@ -52,7 +52,7 @@ const HeroFeature1 = () => {
               style={sectionStyle}
             >
               <div className="absolute top-14 left-0 right-0 bottom-0 text-center">
-                <p className="font-notoSerifTC text-2xl tracking-wider leading-relaxed">
+                <p className="font-notoSerifTC font-semibold text-2xl tracking-wider leading-relaxed">
                   這時日落的方向是西
                   <br />
                   越過眼前的柏樹。潮水

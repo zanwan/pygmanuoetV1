@@ -1,29 +1,43 @@
 // import { BookSet1, } from "../assets";
+import React, { useState } from "react";
+import BookModal from "./BookModal";
 
 const BookCard = ({ product, height }) => {
-  // const sectionStyle = {
-  //   backgroundImage: `url(${book1Cover})`,
-  // };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = "unset";
+  };
 
   return (
-    <div className="md:h-[580px] w-full bg-secondary border-black border-[1px] border-solid">
-      <img
-        src={product.img}
-        alt=""
-        className="object-cover md:h-[250px] mx-auto mt-4 md:mt-8"
-      />
-      <div className=" flex flex-col justify-between items-center">
-        <div className="mx-8 my-4 md:my-8">
-          <p className="font-notoSerifTC font-semibold text-3xl">
-            {product.title}
-          </p>
-          <p
-            className={`font-notoSerifTC font-normal text-base text-justify mt-4 `}
-          >
-            {product.content}
-          </p>
+    <div
+      className="md:h-[380px] w-full"
+      onClick={() => {
+        openModal();
+      }}
+    >
+      <div className="hover:brightness-110 hover:text-yellow-800 transition duration-500 ease-in-out cursor-pointer">
+        <img
+          src={product.images[0]}
+          alt=""
+          className="object-cover md:h-[220px] mx-auto mt-4 md:mt-8 "
+        />
+        <div className=" flex flex-col justify-between items-center">
+          <div className="mx-8 mt-2 mb-4 md:my-8">
+            <p className="font-notoSerifTC font-semibold text-2xl">
+              {product.title}
+            </p>
+          </div>
         </div>
       </div>
+
+      {isModalOpen && <BookModal closeModal={closeModal} book={product} />}
     </div>
   );
 };

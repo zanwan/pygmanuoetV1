@@ -23,7 +23,7 @@ import extroCover from "./extroCover.webp";
 import ProductOpen from "./ProductOpen.webp";
 import CoverReveal from "./CoverReveal.png";
 
-import youngmu from "./youngmu.png";
+import youngmu from "./youngmu.webp";
 
 import poemTub1 from "./poemTub1.webp";
 import poemTub2 from "./poemTub2.webp";
@@ -43,6 +43,8 @@ import fisfisa from "./目宿媒體.webp";
 
 import grow from "./詩意蔓生.webp";
 import poemquote1 from "./poemquote1.svg";
+import poemquote2 from "./poemquote2.svg";
+
 import boat from "./SVG/瓶中稿插圖.svg";
 import toungPoem from "./唐詩的一角.webp";
 import editorsLetter from "./EditorsLetter.svg";
@@ -52,6 +54,40 @@ import editorNamebg from "./葉步榮bg.svg";
 import reviewNote1 from "./reviewNote-1.svg";
 import reviewNote2 from "./reviewNote-2.svg";
 import reviewNote3 from "./reviewNote-3.svg";
+
+import bookcover1 from "./bookcovers/楊牧全集立體書封1.webp";
+import bookcover2 from "./bookcovers/楊牧全集立體書封2.webp";
+import bookcover3 from "./bookcovers/楊牧全集立體書封3.webp";
+import bookcover4 from "./bookcovers/楊牧全集立體書封4.webp";
+import bookcover5 from "./bookcovers/楊牧全集立體書封5.webp";
+import bookcover6 from "./bookcovers/楊牧全集立體書封6.webp";
+import bookcover7 from "./bookcovers/楊牧全集立體書封7.webp";
+import bookcover8 from "./bookcovers/楊牧全集立體書封8.webp";
+import bookcover9 from "./bookcovers/楊牧全集立體書封9.webp";
+import bookcover10 from "./bookcovers/楊牧全集立體書封10.webp";
+import bookcover11 from "./bookcovers/楊牧全集立體書封11.webp";
+import bookcover12 from "./bookcovers/楊牧全集立體書封12.webp";
+import bookcover13 from "./bookcovers/楊牧全集立體書封13.webp";
+import bookcover14 from "./bookcovers/楊牧全集立體書封14.webp";
+import bookcover15 from "./bookcovers/楊牧全集立體書封15.webp";
+import bookcover16 from "./bookcovers/楊牧全集立體書封16.webp";
+import bookcover17 from "./bookcovers/楊牧全集立體書封17.webp";
+import bookcover18 from "./bookcovers/楊牧全集立體書封18.webp";
+import bookcover19 from "./bookcovers/楊牧全集立體書封19.webp";
+import bookcover20 from "./bookcovers/楊牧全集立體書封20.webp";
+import bookcover21 from "./bookcovers/楊牧全集立體書封21.webp";
+import bookcover22 from "./bookcovers/楊牧全集立體書封22.webp";
+import bookcover23 from "./bookcovers/楊牧全集立體書封23.webp";
+import bookcover24 from "./bookcovers/楊牧全集立體書封24.webp";
+import bookcover25 from "./bookcovers/楊牧全集立體書封25.webp";
+import bookcover26 from "./bookcovers/楊牧全集立體書封26.webp";
+import bookcover27 from "./bookcovers/楊牧全集立體書封27.webp";
+import bookcover28 from "./bookcovers/楊牧全集立體書封28.webp";
+import bookcover29 from "./bookcovers/楊牧全集立體書封29.webp";
+import bookcover30 from "./bookcovers/楊牧全集立體書封30.webp";
+
+import grass from "./小草.webp";
+import cloud from "./雲.webp";
 
 export {
   feature1img,
@@ -96,4 +132,37 @@ export {
   reviewNote1,
   reviewNote2,
   reviewNote3,
+  bookcover1,
+  bookcover2,
+  bookcover3,
+  bookcover4,
+  bookcover5,
+  bookcover6,
+  bookcover7,
+  bookcover8,
+  bookcover9,
+  bookcover10,
+  bookcover11,
+  bookcover12,
+  bookcover13,
+  bookcover14,
+  bookcover15,
+  bookcover16,
+  bookcover17,
+  bookcover18,
+  bookcover19,
+  bookcover20,
+  bookcover21,
+  bookcover22,
+  bookcover23,
+  bookcover24,
+  bookcover25,
+  bookcover26,
+  bookcover27,
+  bookcover28,
+  bookcover29,
+  bookcover30,
+  poemquote2,
+  grass,
+  cloud,
 };

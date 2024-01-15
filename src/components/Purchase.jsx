@@ -6,7 +6,7 @@ import { YangMuTitle } from "../assets";
 
 const Purchase = () => {
   return (
-    <div className="flex justify-center mt-24">
+    <div className="flex justify-center mt-14">
       <div className="flex-col">
         <img
           src={YangMuTitle}

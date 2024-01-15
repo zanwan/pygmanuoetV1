@@ -15,8 +15,10 @@ import Question from "./Question";
 import Footer from "./Footer";
 import { PoemBLock } from "./PoemBLock";
 import EditorLetter from "./EditorLetter";
+import BookGroup from "./BookGroup";
+// import BookModal from "./BookModal";
 
-import ReviewPost from "./ReviewPost";
+// import ReviewPost from "./ReviewPost";
 
 export {
   Navbar,
@@ -34,7 +36,7 @@ export {
   Purchase,
   Question,
   Footer,
-  ReviewPost,
   PoemBLock,
   EditorLetter,
+  BookGroup,
 };

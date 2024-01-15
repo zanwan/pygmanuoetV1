@@ -7,10 +7,8 @@ import {
   SectionTitle,
   ReviewCard,
   ProductFeature,
-  BookCard,
-  Designfeature,
+  BookGroup,
   AboutAuthor,
-  AuthorQuote,
   Recitation,
   Purchase,
   Question,
@@ -22,7 +20,6 @@ import {
 import {
   AllBooks,
   extroCover,
-  grow,
   reviewNote1,
   reviewNote2,
   reviewNote3,
@@ -74,7 +71,7 @@ const App = () => (
     </div>
 
     <div
-      className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`}
+      className={`bg-primary ${styles.flexStart} scroll-mt-36 snap-start`}
       id="features"
     >
       <div className={`${styles.boxWidth}`}>
@@ -164,49 +161,9 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth} ${styles.paddingX}`}>
-        <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-12 md:col-span-4">
-            <BookCard product={product[1]} height={200} />
-          </div>
-          <div className="col-span-12 md:col-span-4">
-            <BookCard product={product[2]} height={200} />
-          </div>
-          <div className="col-span-12 md:col-span-4">
-            <BookCard product={product[3]} height={200} />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-12 gap-4 mt-4">
-          <div className="col-span-12 md:col-span-6">
-            <BookCard product={product[4]} height={150} />
-          </div>
-          <div className="col-span-12 md:col-span-6">
-            <BookCard product={product[5]} height={150} />
-          </div>
-        </div>
-
-        {/* <div className="grid grid-cols-12 gap-4 mt-4">
-          <div className="col-span-12 md:col-span-6">
-            <BookCard product={product[5]} />
-          </div>
-          <div className="col-span-12 md:col-span-6">
-            <BookCard product={product[6]} />
-          </div>
-        </div> */}
+        <BookGroup />
       </div>
     </div>
-
-    {/* <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"從文字誕生的視覺觸感"} />
-      </div>
-    </div>
-
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Designfeature />
-      </div>
-    </div> */}
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
@@ -220,12 +177,6 @@ const App = () => (
       </div>
     </div>
 
-    {/* <div className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`} id="features">
-      <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"聆聽楊牧"}/>
-      </div>
-    </div> */}
-
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <SectionTitle title={"聽見文學的聲音"} />
@@ -237,12 +188,6 @@ const App = () => (
         <Recitation />
       </div>
     </div>
-
-    {/* <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <AuthorQuote />
-      </div>
-    </div> */}
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxfullWidth}`}>
@@ -256,7 +201,7 @@ const App = () => (
     </div>
 
     <div
-      className={`bg-primary ${styles.paddingX} ${styles.flexStart} mt-24 scroll-mt-48 snap-start`}
+      className={`bg-primary ${styles.paddingX} ${styles.flexStart} mt-24 scroll-mt-56 snap-start`}
       id="purchase"
     >
       <div className={`${styles.boxWidth}`}>
@@ -280,8 +225,8 @@ const App = () => (
       id="questions"
     >
       <div className={`${styles.boxfullWidth}`}>
-        <div className="mt-8">
-          <p className="text-4xl font-notoSerifTC text-center">常見問題</p>
+        <div className="mt-2">
+          <p className="font-[ChenYuluoyan] text-6xl text-center">常見問題</p>
           <hr className="w-full md:w-1/2 mx-auto mt-4 border-black" />
         </div>
         <Question />

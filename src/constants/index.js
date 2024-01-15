@@ -20,6 +20,36 @@ import {
   BookSet3,
   BookSet4,
   BookSet5,
+  bookcover1,
+  bookcover2,
+  bookcover3,
+  bookcover4,
+  bookcover5,
+  bookcover6,
+  bookcover7,
+  bookcover8,
+  bookcover9,
+  bookcover10,
+  bookcover11,
+  bookcover12,
+  bookcover13,
+  bookcover14,
+  bookcover15,
+  bookcover16,
+  bookcover17,
+  bookcover18,
+  bookcover19,
+  bookcover20,
+  bookcover21,
+  bookcover22,
+  bookcover23,
+  bookcover24,
+  bookcover25,
+  bookcover26,
+  bookcover27,
+  bookcover28,
+  bookcover29,
+  bookcover30,
 } from "../assets";
 
 export const navLinks = [
@@ -72,19 +102,6 @@ export const features = [
 ];
 
 export const reviews = [
-  // {
-  //   id: "review-1",
-  //   header: "華文世界首次全面呈現",
-  //   content:
-  //     "二零二四年春，由花蓮同鄕老友葉步榮先生監修、洪範書店負責之三十卷全集，終將楊牧先生對《詩經》之比較研究，在華文世界首次全面呈現，定必對日後中國文學的理論探討多有啟發。",
-  //   name: "鄭樹森 / 聖地牙哥加州大學榮休教授",
-  //   nameCard: "",
-  //   fullReview: true,
-  //   avatar: Avatar5,
-  //   articleTitle: "楊牧與詩經",
-  //   article:
-  //     "二十世紀西方文學理論暨方法，繽紛蓬勃，發展多元，堪稱空前。但在教科書及主流回顧裏，通常缺席或忽略的總是「口頭創作」（oral composition) 或文學的「口頭性」（orality) 理論。\n二十世紀的三十年代，出身柏克萊加州大學的希臘文學學者米爾曼 · 巴理 (Milman Parry) 及其門生阿拔特 · 洛德 (Albert Lord) ，在今天的波斯尼亞（Bosnia) 地區「田野調查」，以當時最先進的錄音器材，錄下數千小時該地完全文盲的詩歌吟唱手之長篇詠誦，並以此客觀證明口頭創作如何以各種「套語」（formulas or formulaic expressions) 來記憶、敍述、即場創作; 更進一步說明古希臘的荷馬史詩（Homeric epics) 之創作方法，亦屬同一血脈傳統的口頭創作吟詠。兩位學者的發現，在研究典範上，徹底顛覆過去對荷馬史詩的認知。巴理教授更曾被譽為「荷馬研究之達爾文」。\n楊牧先生在柏克萊加州大學攻讀比較文學博士時，研習古希臘文及古英文，亦因此對荷馬史詩、古英詩《貝奧武夫》在原典中之成於「口頭創作」，開始深入思考，並曾親聆洛德教授講學。其後更進一步將兩位學者來自西方傳統的見解，以比較的框架，探討《詩經》之口頭成分。\n這部博士論文，歷經修改，終在一九七四年罕有地由加州大學出版社刊行；書名為 《The Bell and the Drum : Shih Ching as Formulaic Poetry in an Oral Tradition》，中文意思是： 《鐘與鼓：詩經作為口述傳統中之套語詩作》。此書之創意，不單是將兩位西方學者的「口頭創作」理論，應用於文化脈絡迥異之中國最早的詩歌總集，更以《詩經》之短篇及抒情兩個特色，大大拓闊兩位西方學者源於長篇及敍事之理解。\n在此書之後，楊牧先生持續以比較的角度探索《詩經》。先是就《詩經》之肯定「文德」，與頌揚武德之古羅馬史詩《厄尼亞本紀》（Aeneid) 相較，重塑一個面貌殊異的中原史詩英雄。儘管不少中外學者都認為，中國文學之發展雖源遠流長，但並無出現西方傳統及一般認知的「史詩」(epic) ；楊牧先生之獨特見解，亦為長久以來的爭議，增添一個角度。其後又就《詩經》中「儀式」（rituals）之「具體描繪」（mimesis) ，窺探中國戲劇之祭典起源，不但補充王國維早期的重要論點，更與同一時期任半塘之闡釋，異曲同工。\n二零二四年春，由花蓮同鄕老友葉步榮先生監修、洪範書店負責之三十卷全集，終將楊牧先生對《詩經》之比較研究，在華文世界首次全面呈現，定必對日後中國文學的理論探討多有啓發。",
-  // },
   {
     id: "review-1",
     header: "一整套書，就如同我們時時仰望的無盡蒼穹。",
@@ -135,6 +152,9 @@ export const reviews = [
     nameCard: "詩人",
     fullReview: true,
     avatar: Avatar6,
+    articleTitle: "未完成的和諧",
+    article:
+      "傳統典型與現代人物分別出現，在我永遠未完成的系列創作裏隨時參與，追求風格與思想之變化，完整的工作，如千頭萬緒的繩結裏維持某種秩序……\n《奇萊後書》完成於2009年，楊牧以未竟的〈中途〉",
   },
   {
     id: "review-5",
@@ -159,6 +179,9 @@ export const reviews = [
       "臺灣大學外文系學士\n美國南加州大學比較文學博士\n現為美國戴維斯加州大學東亞語言文化系及比較文學系特聘教授",
     fullReview: true,
     avatar: Avatar6,
+    articleTitle: "未完成的和諧",
+    article:
+      "傳統典型與現代人物分別出現，在我永遠未完成的系列創作裏隨時參與，追求風格與思想之變化，完整的工作，如千頭萬緒的繩結裏維持某種秩序……\n《奇萊後書》完成於2009年，楊牧以未竟的〈中途〉",
   },
   {
     id: "review-7",
@@ -169,6 +192,9 @@ export const reviews = [
     nameCard: "",
     fullReview: true,
     avatar: Avatar6,
+    articleTitle: "未完成的和諧",
+    article:
+      "傳統典型與現代人物分別出現，在我永遠未完成的系列創作裏隨時參與，追求風格與思想之變化，完整的工作，如千頭萬緒的繩結裏維持某種秩序……\n《奇萊後書》完成於2009年，楊牧以未竟的〈中途〉",
   },
   {
     id: "review-8",
@@ -179,6 +205,9 @@ export const reviews = [
     nameCard: "",
     fullReview: true,
     avatar: Avatar6,
+    articleTitle: "未完成的和諧",
+    article:
+      "傳統典型與現代人物分別出現，在我永遠未完成的系列創作裏隨時參與，追求風格與思想之變化，完整的工作，如千頭萬緒的繩結裏維持某種秩序……\n《奇萊後書》完成於2009年，楊牧以未竟的〈中途〉",
   },
 ];
 
@@ -186,46 +215,87 @@ export const product = [
   {
     id: "intro",
     content:
-      "❝\n依文類分五卷，共三十冊\n遵循楊牧編輯理念，以文字閱讀為重\n維持簡約賅實版面",
+      "\n依文類分五卷，共三十冊\n遵循楊牧編輯理念，以文字閱讀為重\n維持簡約賅實版面",
   },
   {
     id: "book1",
     title: "詩卷五冊",
     content:
       "收曾以單行本形式出版之詩集，依各集初版時序，包括《水之湄》、《花季》、《燈船》、《傳說》、《瓶中稿》、《北斗行》、《吳鳳》、《禁忌的遊戲》、《海岸七疊》、《有人》、《完整的寓言》、《時光命題》、《涉事》、《介殼蟲》、《長短歌行》十五集，並附遺作《微塵》一集。內容參考洪範版《楊牧詩集》三冊編排。",
-    img: BookSet1,
+    images: [
+      BookSet1,
+      bookcover1,
+      bookcover2,
+      bookcover3,
+      bookcover4,
+      bookcover5,
+    ],
   },
   {
     id: "book2",
     title: "散文卷七冊",
     content:
       "收曾以單行本形式出版之散文集，參照出版時序及文章篇幅，合輯分冊，包括《葉珊散文集》、《年輪》、《柏克萊精神》、《一首詩的完成》、《搜索者》、《亭午之鷹》、《奇萊前書》、《奇萊後書》、《疑神》、《星圖》、《交流道》、《飛過火山》十二集。",
-    img: BookSet2,
+    images: [
+      BookSet2,
+      bookcover6,
+      bookcover7,
+      bookcover8,
+      bookcover9,
+      bookcover10,
+      bookcover11,
+      bookcover12,
+    ],
   },
   {
     id: "book3",
     title: "文論卷六冊",
     content:
       "收曾以單行本形式出版之文論八集。原刊本《傳統的與現代的》（1974）、《文學知識》（1979）及《文學的源流》（1984）三集，後經楊牧增刪改訂，編成洪範版《失去的樂土》（2002）及《掠影急流》（2005），文論卷收此二集；未見於此二集之作，收入別卷《集外集》。另編入刊於海內外學報之三篇論文，英文原作皆經漢譯。",
-    img: BookSet3,
+    images: [
+      BookSet3,
+      bookcover13,
+      bookcover14,
+      bookcover15,
+      bookcover16,
+      bookcover17,
+      bookcover18,
+    ],
   },
   {
     id: "book4",
     title: "譯著卷四冊",
     content:
-      "收曾以單行本形式出版之翻譯，包括《葉慈詩選》、《暴風雨》、《英詩漢譯集》、《新生》、《西班牙浪人吟》、《甲溫與綠騎俠傳奇》六集；以及文論《隱喻與實現》書後附錄〈庫爾提烏思論歐洲與歐洲學〉譯文一篇。",
-    img: BookSet4,
+      "收曾以單行本形式出版之翻譯，包括《葉慈詩選》、《暴風雨》、《英詩漢譯集》、《新生》、《西班牙浪人吟》、《甲溫與綠騎俠傳奇》六集；以及文論《隱喻與實現》書後附錄〈庫爾提烏思論歐洲與歐洲文學〉譯文一篇。",
+    images: [BookSet4, bookcover19, bookcover20, bookcover21, bookcover22],
   },
   {
     id: "book5",
     title: "別卷八冊",
     content:
       "收楊牧生前未編入單行本之作，包括詩、散文、雜文、序跋、文論、翻譯……等，編為《集外集》三冊；以及與瘂弦、葉步榮長年往來之書信，編為《書信》三冊；加上洪範出版書籍之摺口書介（楊牧撰）《洪範書介》一冊；以及年表、索引、存目作品、手稿、書影、生活照……等資料集《附冊》一冊。",
-    img: BookSet5,
+    images: [
+      BookSet5,
+      bookcover23,
+      bookcover24,
+      bookcover25,
+      bookcover26,
+      bookcover27,
+      bookcover28,
+      bookcover29,
+      bookcover30,
+    ],
   },
   {
     id: "extro",
-    img: extroCover,
+    images: [
+      BookSet1,
+      bookcover1,
+      bookcover2,
+      bookcover3,
+      bookcover4,
+      bookcover5,
+    ],
   },
 ];
 
@@ -241,7 +311,7 @@ export const authorInfo = [
   {
     id: "aboutAutherContent",
     content:
-      "本名王靖獻，筆名葉珊、楊牧等，台灣花蓮人。東海大學外文系學士，美國愛荷華大學藝術碩士，柏克萊加州大學比較文學博士。曾任教於美國麻薩諸塞大學阿默斯特分校、華盛頓大學、普林斯頓大學、香港科技大學、台灣大學、東華大學、政治大學等，曾任中央研究院特聘研究員兼中國文哲研究所所長、東華大學人文社會科學學院院長。\n楊牧一生戮力耕耘文學，著有大量詩、散文、戲劇、評論等中英文類，有數十種外文譯本在國外出版。曾獲中山文藝獎、吳三連文藝獎、國家文藝獎、馬來西亞花蹤世界華文文學獎、美國紐曼華語文學獎（Newman Prize for Chinese Literature）、瑞典蟬獎（Cikada Prize）等。",
+      "本名王靖獻（1940–2020），筆名葉珊、楊牧等，台灣花蓮人。東海大學外文系學士，美國愛荷華大學藝術碩士，柏克萊加州大學比較文學博士。曾任教於美國麻薩諸塞大學阿默斯特分校、華盛頓大學、普林斯頓大學、香港科技大學、台灣大學、東華大學、政治大學等，曾任中央研究院特聘研究員兼中國文哲研究所所長、東華大學人文社會科學學院院長。\n楊牧一生戮力耕耘文學，著有大量詩、散文、戲劇、評論等中英文類，有數十種外文譯本在國外出版。曾獲中山文藝獎、吳三連文藝獎、國家文藝獎、馬來西亞花蹤世界華文文學獎、美國紐曼華語文學獎（Newman Prize for Chinese Literature）、瑞典蟬獎（Cikada Prize）等。",
   },
   {
     id: "authorQuote",
@@ -253,26 +323,25 @@ export const authorInfo = [
 export const questions = [
   {
     id: "question1",
-    question: "書籍尺寸、材質與整體重量？",
+    question: "編輯委員有誰？",
     answer:
-      "本套書的每本書尺寸為15cm x 21cm，採用優質的木漿紙印刷，每本書平均重量為300克，整套書的總重量約為9公斤。",
+      "奚密、許又方、陳芳明、陳育虹、陳義芝、須文蔚、張力、葉步榮、葉雲平、楊照、楊澤、鄭毓瑜、鄭樹森、謝旺霖 (按姓氏筆畫排序)",
   },
   {
     id: "question2",
-    question: "編輯委員有誰？是誰出資出版？",
-    answer:
-      "編輯委員由台灣文學界的資深學者和詩人組成，確保書籍的品質與完整性。此套書是由童子賢先生出資，並由洪範編輯出版。",
+    question: "書籍尺寸？",
+    answer: "25開本。",
   },
   {
     id: "question3",
     question: "是否會出版電子書？",
-    answer: "目前我們沒有出版電子書的計劃。",
+    answer: "目前尚未有出版電子書的計劃，未來若出版將另行公告。",
   },
   {
     id: "question4",
-    question: "圖書館或公司行號贊助採購？",
+    question: "圖書館或公司行號採購？",
     answer:
-      "我們非常歡迎圖書館或公司行號的贊助採購。如果您有此方面的需求或問題，請聯絡我們的客服信箱，我們會儘快回覆您的諮詢。",
+      "我們非常歡迎圖書館或公司行號的採購。如果您有此方面的需求或問題，請聯絡出版社「洪範書店」",
   },
 ];
 

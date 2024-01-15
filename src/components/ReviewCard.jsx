@@ -9,7 +9,6 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
 
   const openModal = () => {
     setIsOpen(true);
-
     document.body.style.overflow = "hidden";
   };
 
@@ -27,7 +26,6 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
       className="w-full flex flex-row-reverse justify-end items-center cursor-pointer bg-cover bg-center hover:bg-secondary hover:text-yellow-700 transition duration-300 ease-in-out"
       style={bgsvg}
       onClick={() => {
-        setIsOpen(true);
         openModal();
       }}
     >
@@ -76,10 +74,7 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
 
       {isOpen && (
         <ReviewPost
-          closeModal={() => {
-            setIsOpen(false);
-            closeModal();
-          }}
+          closeModal={closeModal}
           article={reviews}
           articleBgColor={bgColor}
         />
