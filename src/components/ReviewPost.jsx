@@ -10,7 +10,7 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
       aria-modal="true"
     >
       <div
-        className="relative bg-secondary pt-[10vh] pb-[10vh] max-w-4xl w-full overflow-y-auto h-1/2 mt-8 px-8 md:px-16"
+        className="relative bg-secondary pt-[10vh] pb-[10vh] max-w-4xl w-full overflow-y-auto h-[75vh] md:h-1/2 mt-8 px-8 md:px-16"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-row justify-start align-middle font-notoSerifTC mb-8 text-black">
@@ -20,12 +20,12 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
             alt="teacher1"
             loading="lazy"
           />
-          <h2 className="font-notoSerifTC text-4xl md:text-2xl font-bold mt-1">
+          <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold mt-1">
             {article.name} ——— 最喜歡的楊牧作品
           </h2>
         </div>
 
-        <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black">
+        <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-justify text-black">
           {article.quickAnswer.split("\n").map((line, index) => (
             <p key={index} className="indent-8">
               {line}
@@ -37,7 +37,7 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
 
         <button
           type="button"
-          className="bg-primary absolute top-4 right-6 inline-flex justify-center rounded-full border border-transparent px-4 py-4 font-light text-black hover:bg-[#C7BEAD] sm:ml-3 sm:w-auto sm:text-sm"
+          className="bg-primary absolute top-4 right-6 inline-flex justify-center rounded-full border border-transparent px-2 py-2 md:px-4 md:py-4 font-light text-black hover:bg-[#C7BEAD] sm:ml-3 sm:w-auto sm:text-sm"
           onClick={closeModal}
         >
           <img

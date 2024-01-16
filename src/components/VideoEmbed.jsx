@@ -24,7 +24,7 @@ export const VideoEmbed = ({ closeModal, videoUrl }) => {
 
         <button
           type="button"
-          className="bg-primary absolute top-0 right-0 inline-flex justify-center rounded-full border border-transparent px-4 py-4 font-light text-black hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white-500 sm:ml-3 sm:w-auto sm:text-sm"
+          className="bg-primary absolute top-0 right-0 inline-flex justify-center rounded-full border border-transparent px-2 py-2 md:px-4 md:py-4 font-light text-black hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white-500 sm:ml-3 sm:w-auto sm:text-sm"
           onClick={closeModal}
         >
           <img

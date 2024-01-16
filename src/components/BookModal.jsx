@@ -14,7 +14,7 @@ export const BookModal = ({ closeModal, book }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-secondary p-6 w-full md:w-3/4 h-3/4 md:h-4/4 overflow-auto"
+        className="bg-secondary p-6 w-full md:w-3/4 h-[80vh] md:h-4/4 overflow-auto"
       >
         <button
           type="button"
