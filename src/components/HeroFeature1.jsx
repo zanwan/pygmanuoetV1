@@ -8,22 +8,22 @@ const HeroFeature1 = () => {
   return (
     <>
       {/* 網頁版 */}
-      <div className="w-full flex flex-col md:flex md:flex-row md:py-6 md:justify-between md:items-center">
+      <div className="w-full flex flex-col mt-[60px] md:mt-0 md:flex md:flex-row md:py-6 md:justify-between md:items-center">
         <img
-          src={AllBooks}
+          src={features[0].img}
           alt="poemTub-1"
-          className="md:hidden my-6 object-cover mx-auto"
+          className=" md:hidden my-6 object-cover mx-auto"
           loading="lazy"
         />
 
-        <div className="w-full mt-[2rem] md:mt-[4rem] md:w-5/12 md:flex-row items-center">
+        <div className="w-full mt-[1rem] md:mt-[4rem] md:w-5/12 md:flex-row items-center">
           <div className="md:flex-col md:pr-2">
-            <div className=" w-[420px] mx-auto">
-              <h2 className="font-[ChenYuluoyan] text-8xl text-black text-center md:text-left">
+            <div className="w-full md:w-[420px] mx-auto px-4 md:px-0">
+              <h2 className="font-[ChenYuluoyan] text-6xl md:text-8xl text-black text-center md:text-left">
                 {features[0].title}
               </h2>
-              <div className="font-notoSerifTC text-justify text-md tracking-wider leading-6 ">
-                <h3 className=" text-2xl font-medium">
+              <div className="font-notoSerifTC text-center md:text-justify text-md tracking-wider leading-6 ">
+                <h3 className=" text-xl md:text-2xl font-medium">
                   獻給所有文學人的解答之書
                 </h3>
                 <br />

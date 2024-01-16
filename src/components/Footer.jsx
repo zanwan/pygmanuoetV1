@@ -3,7 +3,7 @@ import { fisfisaSocialMedia } from "../constants";
 import { publisherSocialMedia } from "../constants";
 import { contact } from "../constants";
 
-import { hongfang, fisfisa } from "../assets/index";
+import { hongfang, fisfisa, facebook, instagram } from "../assets/index";
 
 const Footer = () => {
   return (
@@ -20,6 +20,14 @@ const Footer = () => {
         <a href={fisfisaSocialMedia[0].url} target="_blank" rel="noreferrer">
           <img src={fisfisa} className="w-[80px] md:w-[100px] mt-2" />
         </a>
+        <div className="flex flex-row justify-start mt-2">
+          <a href={fisfisaSocialMedia[1].url} target="_blank" rel="noreferrer">
+            <img src={facebook} className="h-[18] w-[18] mr-2"></img>
+          </a>
+          <a href={fisfisaSocialMedia[2].url} target="_blank" rel="noreferrer">
+            <img src={instagram} className="h-[18] w-[18]"></img>
+          </a>
+        </div>
       </div>
 
       <div className="flex-col justify-start w-1/3">

@@ -232,6 +232,20 @@ export const reviews = [
     article:
       "傳統典型與現代人物分別出現，在我永遠未完成的系列創作裏隨時參與，追求風格與思想之變化，完整的工作，如千頭萬緒的繩結裏維持某種秩序……\n《奇萊後書》完成於2009年，楊牧以未竟的〈中途〉",
   },
+  {
+    id: "review-9",
+    header: "葉步榮",
+    content:
+      "如果當今還有人捧讀李白，後世就會有人捧讀楊牧。《楊牧全集》集結詩人六十年豐厚創作，留下詩人感知學思的精髓，是我們最可信賴的文學與人生指引，我們如何能不珍惜？！",
+    name: "葉步榮",
+    nameCard: "",
+    fullReview: true,
+    avatar: Avatar6,
+    quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
+    quickAnswer: "尚待文章更新",
+    articleTitle: "尚待文章更新",
+    article: "敬請期待",
+  },
 ];
 
 export const product = [

@@ -11,22 +11,22 @@ const HeroFeature1 = () => {
       <img
         src={features[1].img}
         alt="hero"
-        className="w-full mt-[2rem] md:w-7/12 md:h-1/2 md:pl-0"
+        className="w-full mt-[-2rem] md:mt-[2rem] md:w-7/12 md:h-1/2 md:pl-0"
         loading="lazy"
       />
 
       <div className="w-full md:w-full flex-row items-center">
         <div className="flex-col mt-8 md:pr-8 md:ml-[20px]">
-          <h2 className="font-[ChenYuluoyan] text-7xl text-black ml-2 text-left md:mt-22">
+          <h2 className="font-[ChenYuluoyan] text-5xl md:text-7xl text-black ml-2 text-center md:text-left md:mt-22">
             國寶級詩人楊牧
           </h2>
           <div className="relative">
             <img
               src={toungPoem}
-              className="absolute left-0 top-6  h-[50px]"
+              className="absolute left-2 md:left-0 top-6 h-[50px]"
             ></img>
             <div className="h-[180px]">
-              <p className="absolute left-6 top-1 font-notoSerifTC mt-10 text-xl font-normal text-black ml-2 text-left tracking-wider	leading-relaxed ">
+              <p className="absolute left-0 right-0 md:left-6 top-1 font-notoSerifTC mt-10 text-md md:text-xl font-normal text-black ml-2 text-center md:text-left tracking-wider leading-relaxed ">
                 三十冊跨文類大全集
                 <br />
                 文學界權威校編舊作新篇
@@ -46,9 +46,9 @@ const HeroFeature1 = () => {
             </div>
           </div>
 
-          <div className="mt-20">
+          <div className=" mt-10 md:mt-20">
             <div
-              className="relative h-[300px] bg-cover bg-center"
+              className="relative h-[250px] md:h-[300px] bg-cover bg-center"
               style={sectionStyle}
             >
               <div className="absolute top-14 left-0 right-0 bottom-0 text-center">
@@ -66,7 +66,7 @@ const HeroFeature1 = () => {
               </div>
               <img
                 src={boat}
-                className="absolute right-0 bottom-0  h-[90px]"
+                className="absolute right-4 bottom-[-35px] md:right-0 md:bottom-0 h-[60px] md:h-[90px]"
               ></img>
             </div>
           </div>

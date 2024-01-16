@@ -66,7 +66,7 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <EditorLetter reviews={reviews[0]} bgColor={"#F1E8E2"} />
+        <EditorLetter reviews={reviews[8]} bgColor={"#F1E8E2"} />
       </div>
     </div>
 
@@ -76,22 +76,19 @@ const App = () => (
     >
       <div className={`${styles.boxWidth}`}>
         <SectionTitle title={"眾家推崇"} />
-        <div className="mt-[-62px] mx-auto w-6/12 text-center text-2xl text-yellow-900 font-notoSerifTC tracking-wide subpixel-antialiased leading-relaxed">
+        <div className="mt-[-62px] mx-auto px-4 md:px-0 w-full md:w-6/12 text-center text-lg md:text-2xl text-yellow-900 font-notoSerifTC tracking-wide subpixel-antialiased leading-relaxed">
           <br />
           奚密・張力・許又方・陳育虹
           <br />
           陳芳明・陳義芝・童子賢・須文蔚・楊照
           <br />
           楊澤・
-          <span
-            className=" font-serif leading-3 align-baseline"
-            style={{ fontSize: "1.6rem" }}
-          >
-            瘂弦
-          </span>
+          <span className="font-serif leading-3 align-baseline">瘂弦</span>
           ・鄭毓瑜・鄭樹森・謝旺霖
           <br />
-          <span className="text-black text-lg">（按姓氏筆畫排序）</span>
+          <span className="text-black text-sm md:text-lg">
+            （按姓氏筆畫排序）
+          </span>
         </div>
       </div>
     </div>
@@ -194,7 +191,7 @@ const App = () => (
         <img
           src={AllBooks}
           alt="poemTub-1"
-          className="my-6 object-cover mx-auto mt-32"
+          className="my-2 md:my-6 md:object-cover mx-auto mt-8 md:mt-32"
           loading="lazy"
         />
       </div>

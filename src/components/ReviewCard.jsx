@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Avatar1 } from "../assets";
+import { eye } from "../assets";
 
 import ReviewPost from "./ReviewPost";
 
@@ -29,25 +29,24 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
         openModal();
       }}
     >
-      <div className="md:hidden flex flex-row justify-end pr-8 pt-4">
-        <button
-          className="font-notoSerifTC font-medium text-base text-right no-underline bg-white px-6 py-1 rounded-md hover:bg-secondary hover:text-black transition duration-300 ease-in-out"
-          // onClick={() => {
-          //   setIsOpen(true);
-          //   openModal();
-          // }}
-        >
-          閱讀更多
-        </button>
+      <div className="md:hidden flex flex-row justify-center align-middle  mx-auto">
+        <img
+          src={eye}
+          className="w-[20px] h-[20px]"
+          onClick={() => {
+            setIsOpen(true);
+            openModal();
+          }}
+        ></img>
       </div>
 
-      <div className="ml-3">
-        <p className="py-2 text-center font-notoSerifTC font-bold text-xl tracking-wide subpixel-antialiased">
+      <div className="ml-3 w-[220px] sm:w-4/6 md:w-4/6">
+        <p className="py-2 text-center md:text-left font-notoSerifTC font-bold text-xl md:text-[18px] tracking-wide subpixel-antialiased">
           {reviews.header}
         </p>
       </div>
 
-      <div className="flex flex-row w-[125px] items-center pl-2 py-4">
+      <div className="flex flex-col md:flex-row w-[60px] sm:w-[100px] md:w-[125px] items-center md:pl-2 py-4">
         <img
           className="w-[42px] h-[42px] object-contain rounded-full"
           src={reviews.avatar}
@@ -55,7 +54,7 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
           loading="lazy"
         />
         <div className="flex flex-col mx-2">
-          <div className="font-notoSerifTC text-md font-medium">
+          <div className="font-notoSerifTC text-sm md:text-md font-medium">
             {reviews.name}
           </div>
         </div>

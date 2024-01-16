@@ -89,6 +89,10 @@ import bookcover30 from "./bookcovers/楊牧全集立體書封30.webp";
 import grass from "./小草.webp";
 import cloud from "./雲.webp";
 
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import eye from "./eye.svg";
+
 export {
   feature1img,
   feature2img,
@@ -165,4 +169,7 @@ export {
   poemquote2,
   grass,
   cloud,
+  facebook,
+  instagram,
+  eye,
 };

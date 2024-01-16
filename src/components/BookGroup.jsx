@@ -20,7 +20,7 @@ const BookGroup = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-evenly w-full">
+      <div className="flex flex-col md:flex-row justify-evenly w-full">
         <BookCard
           onClick={() => openBookModal(product[1])}
           product={product[1]}

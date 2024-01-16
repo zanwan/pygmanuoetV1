@@ -28,15 +28,15 @@ const EditorLetter = ({ reviews, bgColor }) => {
   return (
     <div className="flex flex-col justify-center">
       <div
-        className="relative w-9/12 h-[800px] bg-cover bg-center mx-auto"
+        className="relative w-full mt-[-32px] md:mt-0 md:w-9/12 bg-cover bg-center mx-auto"
         style={sectionStyle}
       >
-        <div className="absolute top-[-42px] left-0 right-0 mx-auto">
+        <div className="absolute md:top-[-42px] left-0 right-0 mx-auto">
           <div className="flex flex-col mx-auto justify-center">
             <img
-              className=" w-[90px] h-[90px] object-contain rounded-full mx-auto"
+              className=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-contain rounded-full mx-auto"
               src={Avatar7}
-              alt="teacher1"
+              alt="葉步榮"
               loading="lazy"
             />
             <div className="px-4 py-2 w-[120px] text-center mx-auto text-2xl font-notoSerifTC font-medium">
@@ -45,11 +45,11 @@ const EditorLetter = ({ reviews, bgColor }) => {
           </div>
         </div>
 
-        <div className="w-[550px] mx-auto absolute top-20 left-0 right-0 bottom-0 text-center">
-          <div className="font-notoSerifTC font-bold text-4xl mb-8 mt-10">
+        <div className="w-full md:w-[550px] mx-auto  text-center flex flex-col justify-center mt-12 md:mt-8">
+          <div className="font-notoSerifTC font-bold text-2xl md:text-4xl mb-8 mt-24">
             有人在早晨遞給我一首詩
           </div>
-          <p className="h-[650px] indent-8 text-wrap text-justify font-notoSerifTC font-regular text-lg tracking-wider leading-relaxed">
+          <p className="indent-8 text-wrap text-justify font-notoSerifTC font-regular text-md md:text-lg tracking-wider leading-relaxed px-4 md:px-0">
             我沒問過楊牧的筆名，他早年 日語，楊與葉同音；楊先生，ya
             sam，我猜葉珊從楊桑來的。
             <br />
@@ -72,22 +72,19 @@ const EditorLetter = ({ reviews, bgColor }) => {
             <br />
             <br />
           </p>
+          <div className="flex flex-row justify-center mt-8 pt-2 mx-auto">
+            <button
+              className="font-notoSerifTC font-medium text-base text-right no-underline bg-white px-6 py-1 rounded-md hover:bg-secondary hover:text-black transition duration-300 ease-in-out"
+              onClick={() => {
+                setIsOpen(true);
+                openModal();
+              }}
+            >
+              閱讀更多
+            </button>
+          </div>
         </div>
       </div>
-
-      {reviews.fullReview && (
-        <div className="flex flex-row justify-center mt-8 pt-2 mx-auto">
-          <button
-            className="font-notoSerifTC font-medium text-base text-right no-underline bg-white px-6 py-1 rounded-md hover:bg-secondary hover:text-black transition duration-300 ease-in-out"
-            onClick={() => {
-              setIsOpen(true);
-              openModal();
-            }}
-          >
-            閱讀更多
-          </button>
-        </div>
-      )}
 
       {isOpen && (
         <ReviewPost
