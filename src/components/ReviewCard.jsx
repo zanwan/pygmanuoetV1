@@ -46,11 +46,7 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
           {reviews.header}
         </p>
       </div>
-      {/* <p className="px-8 pt-2 font-notoSerifTC font-normal text-base text-justify tracking-wide subpixel-antialiased">
-        {reviews.content}
-      </p> */}
 
-      {/* 名條 */}
       <div className="flex flex-row w-[125px] items-center pl-2 py-4">
         <img
           className="w-[42px] h-[42px] object-contain rounded-full"
@@ -62,13 +58,6 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
           <div className="font-notoSerifTC text-md font-medium">
             {reviews.name}
           </div>
-          {/* {reviews.nameCard && (
-            <div className="font-notoSerifTC font-normal text-xs">
-              {reviews.nameCard.split("\n").map((line, index) => (
-                <p key={index}>{line}</p>
-              ))}
-            </div>
-          )} */}
         </div>
       </div>
 
