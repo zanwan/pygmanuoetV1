@@ -23,7 +23,7 @@ const HeroFeature1 = () => {
           <div className="relative">
             <img
               src={toungPoem}
-              className="absolute left-2 md:left-0 top-6 h-[50px]"
+              className="hidden md:block absolute left-2 md:left-0 top-6 h-[50px]"
             ></img>
             <div className="h-[180px]">
               <p className="absolute left-0 right-0 md:left-6 top-1 font-notoSerifTC mt-10 text-md md:text-xl font-normal text-black ml-2 text-center md:text-left tracking-wider leading-relaxed ">
@@ -48,7 +48,7 @@ const HeroFeature1 = () => {
 
           <div className=" mt-10 md:mt-20">
             <div
-              className="relative h-[250px] md:h-[300px] bg-cover bg-center"
+              className="relative h-[250px] md:h-[300px] bg-cover bg-center max-w-[400px] md:max-w-[500px] mx-auto"
               style={sectionStyle}
             >
               <div className="absolute top-14 left-0 right-0 bottom-0 text-center">

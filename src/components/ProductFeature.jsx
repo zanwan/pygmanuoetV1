@@ -9,7 +9,7 @@ const ProductFeature = () => {
           <div className="flex justify-center mt-[150px] md:relative">
             <img
               src={cloud}
-              className="hidden md:absolute right-24 top-0 h-[60px]"
+              className="hidden md:block absolute right-24 top-[-240px] h-[60px]"
             ></img>
             <p className="font-notoSerifTC mt-[-180px] text-md md:text-xl font-normal text-black ml-2 text-center tracking-wide subpixel-antialiased leading-loose mb-10">
               {product[0].content.split("\n").map((line, index) => (
@@ -23,7 +23,7 @@ const ProductFeature = () => {
           <div className="relative">
             <img
               src={grass}
-              className="hidden md:absolute left-24 bottom-[-150px]  h-[100px]"
+              className="hidden md:block absolute left-24 bottom-[-150px]  h-[100px]"
             ></img>
             <div className="h-[180px]">
               <p className="flex justify-center md:absolute right-0 left-0 top-1 font-notoSerifTC mt-2 md:mt-10 text-xl md:text-2xl  text-black ml-2 text-center tracking-wider	font-semibold leading-relaxed">

@@ -10,29 +10,50 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
       aria-modal="true"
     >
       <div
-        className="relative bg-secondary pt-[10vh] pb-[10vh] max-w-4xl w-full overflow-y-auto h-[75vh] md:h-1/2 mt-8 px-8 md:px-16"
+        className="relative bg-secondary pt-[10vh] pb-[10vh] max-w-4xl w-full overflow-y-auto h-[75vh] md:h-[75vh] mt-8 px-8 md:px-16"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-row justify-start align-middle font-notoSerifTC mb-8 text-black">
           <img
-            className="w-[40px] h-[40px] object-contain rounded-full mr-4"
+            className="w-[55px] h-[55px] object-contain rounded-full mr-4"
             src={article.avatar}
             alt="teacher1"
             loading="lazy"
           />
-          <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold mt-1">
-            {article.name} ——— 最喜歡的楊牧作品
+          <h2 className="font-notoSerifTC text-xl md:text-2xl font-medium mt-1 flex flex-col justify-start">
+            {article.name}{" "}
+            <span className="text-gray-900 text-sm">
+              {article.nameCard.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </span>
           </h2>
         </div>
 
-        <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-justify text-black">
-          {article.quickAnswer.split("\n").map((line, index) => (
+        <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-8">
+          {article.content.split("\n").map((line, index) => (
             <p key={index} className="indent-8">
               {line}
               <br />
               <br />
             </p>
           ))}
+        </div>
+
+        <div className="bg-primary flex flex-col justify-center">
+          <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
+            必推的楊牧
+          </h2>
+
+          <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-center px-8">
+            {article.quickAnswer.split("\n").map((line, index) => (
+              <p key={index} className="indent-8">
+                {line}
+                <br />
+                <br />
+              </p>
+            ))}
+          </div>
         </div>
 
         <button

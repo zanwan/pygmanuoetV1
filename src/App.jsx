@@ -138,6 +138,14 @@ const App = () => (
             bgStyle={reviewNote1}
           />
         </div>
+
+        <div className="grid md:grid-cols-1 gap-2 mt-4 md:mx-[250px]">
+          <ReviewCard
+            reviews={reviews[7]}
+            bgColor={"#EAE1E6"}
+            bgStyle={reviewNote3}
+          />
+        </div>
       </div>
     </div>
 
