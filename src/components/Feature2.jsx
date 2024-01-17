@@ -1,5 +1,5 @@
 import { features } from "../constants";
-import { poemquote1, boat, toungPoem } from "../assets";
+import { poemquote1, boat, toungPoem, YangMuTitle } from "../assets";
 
 const HeroFeature1 = () => {
   const sectionStyle = {
@@ -17,25 +17,29 @@ const HeroFeature1 = () => {
 
       <div className="w-full md:w-full flex-row items-center">
         <div className="flex-col mt-8 md:pr-8 md:ml-[20px]">
-          <h2 className="font-[ChenYuluoyan] text-5xl md:text-7xl text-black ml-2 text-center md:text-left md:mt-22">
-            國寶級詩人楊牧
-          </h2>
-          <div className="relative">
+          <div className="w-full mx-auto md:mx-0 flex justify-center md:justify-start">
             <img
+              src={YangMuTitle}
+              className="object-cover w-[250px] ml-2 "
+              alt="楊牧全集"
+            ></img>
+          </div>
+
+          <div className="relative">
+            {/* <img
               src={toungPoem}
               className="hidden md:block absolute left-2 md:left-0 top-6 h-[50px]"
-            ></img>
+            ></img> */}
             <div className="h-[180px]">
-              <p className="absolute left-0 right-0 md:left-6 top-1 font-notoSerifTC mt-10 text-md md:text-xl font-normal text-black ml-2 text-center md:text-left tracking-wider leading-relaxed ">
-                三十冊跨文類大全集
+              <p className="absolute left-0 right-0 md:left-6 top-1 font-notoSerifTC mt-6 text-md md:text-xl font-normal text-black ml-2 text-center md:text-left tracking-wider leading-relaxed ">
+                ▪ 三十冊跨文類大全集
                 <br />
-                文學界權威校編舊作新篇
+                ▪ 文學界權威校編舊作新篇
                 <br />
-                私密書信、手稿、相片首度公開
+                ▪ 私密書信、手稿、相片首度公開
                 <br />
-                最靠近諾貝爾文學獎的台灣作家思想精華
-                <br />
-                巔峰巨著正式問世，閱讀攻頂之路，就此展開！
+                ▪ 最靠近諾貝爾文學獎的台灣作家思想精華
+                <br />▪ 巔峰巨著正式問世，閱讀攻頂之路，就此展開！
                 {/* {features[1].content.split("\n").map((line, index) => (
               <span key={index}>
                 {line}

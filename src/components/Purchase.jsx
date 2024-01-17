@@ -2,12 +2,12 @@ import React from "react";
 
 import { Button } from "./index";
 
-import { YangMuTitle } from "../assets";
+import { YangMuTitle, AllBooks } from "../assets";
 
 const Purchase = () => {
   return (
-    <div className="flex justify-center mt-[-60px] mb-20 md:mb-0 md:mt-14">
-      <div className="flex-col">
+    <div className="w-full flex justify-center mb-20 md:mb-0 md:mt-14">
+      <div className="flex flex-col">
         <img
           src={YangMuTitle}
           className="w-[200px] md:w-[300px] mx-auto"
@@ -19,6 +19,12 @@ const Purchase = () => {
         </p>
 
         <Button />
+        <div
+          className="font-notoSerifTC text-2xl mt-8 tracking-wider text-center"
+          style={{ color: "#876625" }}
+        >
+          首波珍藏預購79折
+        </div>
       </div>
     </div>
   );

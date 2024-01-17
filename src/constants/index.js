@@ -9,12 +9,15 @@ import {
   Avatar4,
   Avatar5,
   Avatar6,
-  book1Cover,
-  book2Cover,
-  book3Cover,
-  book4Cover,
-  book5Cover,
-  extroCover,
+  Avatar8,
+  Avatar9,
+  Avatar10,
+  // book1Cover,
+  // book2Cover,
+  // book3Cover,
+  // book4Cover,
+  // book5Cover,
+  // extroCover,
   BookSet1,
   BookSet2,
   BookSet3,
@@ -50,28 +53,25 @@ import {
   bookcover28,
   bookcover29,
   bookcover30,
+  YangMuTitle,
 } from "../assets";
 
 export const navLinks = [
   {
+    id: "aboutYangmu",
+    title: "關於楊牧",
+  },
+  {
+    id: "books",
+    title: "關於全集",
+  },
+  {
     id: "editor",
-    title: "主編掛劍",
+    title: "主編",
   },
   {
-    id: "features",
-    title: "眾家推薦",
-  },
-  {
-    id: "product",
-    title: "套書規格",
-  },
-  {
-    id: "purchase",
-    title: "永恆珍藏",
-  },
-  {
-    id: "questions",
-    title: "常見問題",
+    id: "recommendation",
+    title: "名家推薦",
   },
 ];
 
@@ -111,6 +111,7 @@ export const reviews = [
     nameCard: "中央研究院院士 | 國立台灣大學講座教授",
     fullReview: true,
     avatar: Avatar4,
+    recommend: "",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "〈霜夜作〉，藉由夏秋之交的景物變換，深入人生中必然與偶然的辯證。",
@@ -130,6 +131,7 @@ export const reviews = [
       "詩人 | 曾擔任《聯合報》副刊主任，現為臺師大、政大兼任教授 | 趨勢教育基金會文學顧問",
     fullReview: true,
     avatar: Avatar3,
+    recommend: "",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "〈搜索者〉搜索，是人生的課題。搜索，為的是接收自然的啟示，體會文明的面貌，破除心理的疑惑與失落。楊牧的〈搜索者〉，細膩地形容出天地間的召喚，演繹了浪漫的情懷，顯現個人沉思的歷程，語法跌宕，文采煥然。多年前我好奇此作，曾追躡其行旅，去到溫哥華島，同樣開車，走了一趟楊牧走過的路……",
@@ -149,6 +151,7 @@ export const reviews = [
       "政治大學中文研究所博士 | 現任東華大學華文系教授兼主任 | 楊牧文學研究中心主任",
     fullReview: true,
     avatar: Avatar2,
+    recommend: "（卻坐）",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "如果只能圈一本，就讓我圈2014年詩人親手選編的117首《楊牧詩選1956-2013》吧。詩由美出發，而不耽溺於美。我從楊牧文字的美，讀到他對生命與創作最極致的真與善的堅定追求。如果能多圈一本散文，應該是《星圖》。它是詩人與自我的思辯；是詩人對愛，生死與創造的探問。這本舉重若輕的書是散文，是詩，甚至是小說。",
@@ -165,7 +168,8 @@ export const reviews = [
     name: "楊澤",
     nameCard: "詩人",
     fullReview: true,
-    avatar: Avatar6,
+    avatar: Avatar8,
+    recommend: "（林沖夜奔）",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "最喜歡的楊牧作品，實在很難挑呀，姑且挑〈卻坐〉吧？因為這首詩既有浪漫的情懷，又帶著某種程度的不安與長期的想望，不知為什麼總可以觸動我某些感覺。",
@@ -182,6 +186,7 @@ export const reviews = [
     nameCard: "中央研究員近代史研究所兼任研究員 | 國立東華大學榮譽教授",
     fullReview: true,
     avatar: Avatar1,
+    recommend: "",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "《柏克萊精神》，因為楊牧以散文形式處理寫景，敘事，懷人，論理等議題，呈現了1970年代的面貌。",
@@ -198,7 +203,8 @@ export const reviews = [
     nameCard:
       "臺灣大學外文系學士 | 美國南加州大學比較文學博士 | \n現為美國戴維斯加州大學東亞語言文化系及比較文學系特聘教授",
     fullReview: true,
-    avatar: Avatar6,
+    avatar: Avatar9,
+    recommend: "",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "最喜歡的一首詩：〈故事（用韻Philip Glass, Metamorphosis 2）〉（1994年作） 這首詩的副題來自美國當代作曲家格拉斯的極簡主義鋼琴曲〈變形記之二〉，其不斷迴旋的曲式讓人如癡如醉。楊牧用假設句「假如潮水⋯⋯我以同樣的心」的複沓，完美地模擬了此樂曲的特色。「故事」也有「舊事」的雙重意思。過去種種如船過水無痕；但是，俗諺也云：水過無痕留於心。詩人用迴旋式的結構（即開頭和結尾用同一句型和意象）隱射往事並沒有被遺忘，而是如「潮水有信」般的低迴縈繞在心頭，年復一年，那顆堅定不移的心。",
@@ -215,6 +221,7 @@ export const reviews = [
     nameCard: "作家",
     fullReview: true,
     avatar: Avatar6,
+    recommend: "",
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "如果只能圈一本，就讓我圈2014年詩人親手選編的117首《楊牧詩選1956-2013》吧。詩由美出發，而不耽溺於美。我從楊牧文字的美，讀到他對生命與創作最極致的真與善的堅定追求。如果能多圈一本散文，應該是《星圖》。它是詩人與自我的思辯；是詩人對愛，生死與創造的探問。這本舉重若輕的書是散文，是詩，甚至是小說。",
@@ -228,9 +235,10 @@ export const reviews = [
     content:
       "楊牧期許學術研究無礙於文學創作，中國抒情傳統，浪漫主義文學精神以及安那其主義的反抗動能，更增益了詩與散文的精神與方法的啟發，唯有閱讀全集，才能接近這位文藝復興人的學思歷程。",
     name: "須文蔚",
+    recommend: "（仰望）",
     nameCard: "臺灣師範大學文學院院長",
     fullReview: true,
-    avatar: Avatar6,
+    avatar: Avatar10,
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
     quickAnswer:
       "最喜歡楊牧長詩〈林沖夜奔〉。推薦理由：現代詩中少見，難得鎔鑄抒情，敍事及戲劇於一爐的長詩。",
@@ -245,6 +253,7 @@ export const reviews = [
       "如果當今還有人捧讀李白，後世就會有人捧讀楊牧。《楊牧全集》集結詩人六十年豐厚創作，留下詩人感知學思的精髓，是我們最可信賴的文學與人生指引，我們如何能不珍惜？！",
     name: "葉步榮",
     nameCard: "",
+    recommend: "（仰望）",
     fullReview: true,
     avatar: Avatar6,
     quickQuestion: "最喜歡楊牧的哪一首詩或哪一篇散文或哪一本書？為什麼？",
@@ -258,7 +267,7 @@ export const product = [
   {
     id: "intro",
     content:
-      "\n依文類分五卷，共三十冊\n遵循楊牧編輯理念，以文字閱讀為重\n維持簡約賅實版面",
+      "依文類分五卷，共三十冊，遵循楊牧編輯理念，以文字閱讀為重，維持簡約賅實版面。",
   },
   {
     id: "book1",
@@ -366,23 +375,23 @@ export const authorInfo = [
 export const questions = [
   {
     id: "question1",
-    question: "編輯委員有誰？",
+    question: "編輯委員有誰。",
     answer:
       "奚密、許又方、陳芳明、陳育虹、陳義芝、須文蔚、張力、葉步榮、葉雲平、楊照、楊澤、鄭毓瑜、鄭樹森、謝旺霖 (按姓氏筆畫排序)",
   },
   {
     id: "question2",
-    question: "書籍尺寸？",
+    question: "書籍尺寸。",
     answer: "25開本。",
   },
   {
     id: "question3",
-    question: "是否會出版電子書？",
+    question: "是否會出版電子書。",
     answer: "目前尚未有出版電子書的計劃，未來若出版將另行公告。",
   },
   {
     id: "question4",
-    question: "圖書館或公司行號採購？",
+    question: "圖書館或公司行號採購。",
     answer:
       "我們非常歡迎圖書館或公司行號的採購。如果您有此方面的需求或問題，請聯絡出版社「洪範書店」",
   },

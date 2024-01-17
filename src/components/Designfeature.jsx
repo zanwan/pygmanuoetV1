@@ -1,5 +1,5 @@
 import { productVisual } from "../constants";
-import { CoverReveal } from "../assets";
+// import { CoverReveal } from "../assets";
 
 const Designfeature = () => {
   return (
@@ -8,7 +8,7 @@ const Designfeature = () => {
         {productVisual[0].content}
       </p>
       <div className="flex justify-center mt-12 md:mt-6">
-        <img src={CoverReveal} alt="hero" className="" loading="lazy" />
+        {/* <img src={CoverReveal} alt="hero" className="" loading="lazy" /> */}
       </div>
     </div>
   );

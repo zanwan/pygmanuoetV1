@@ -1,7 +1,7 @@
 import { Button } from "./index";
 import { features } from "../constants";
 
-import { AllBooks } from "../assets/index";
+import { AllBooks, YangMuTitle } from "../assets/index";
 
 const HeroFeature1 = () => {
   /* 首圖與簡介 */
@@ -19,31 +19,35 @@ const HeroFeature1 = () => {
         <div className="w-full mt-[1rem] md:mt-[4rem] md:w-5/12 md:flex-row items-center">
           <div className="md:flex-col md:pr-2">
             <div className="w-full md:w-[420px] mx-auto px-4 md:px-0">
-              <h2 className="font-[ChenYuluoyan] text-6xl md:text-8xl text-black text-center md:text-left">
-                {features[0].title}
-              </h2>
-              <div className="font-notoSerifTC text-center md:text-justify text-md tracking-wider leading-6 ">
-                <h3 className=" text-xl md:text-2xl font-medium">
+              <img
+                src={YangMuTitle}
+                className="object-contain w-[250px] mx-auto md:mx-0"
+                alt="楊牧全集"
+              ></img>
+
+              <div className="w-full md:w-[480px] font-notoSerifTC text-center md:text-justify text-md tracking-wider leading-6 text-nowrap md:ml-4">
+                <h3 className=" text-xl md:text-2xl font-medium mt-6">
                   獻給所有文學人的解答之書
                 </h3>
+                <span className="text-lg font-medium">
+                  集結楊牧六十年豐厚創作，人生與詩藝的唯一嚮導
+                </span>
                 <br />
-                集結楊牧六十年豐厚創作，人生與詩藝的唯一嚮導
                 <br />
+                若將文學視為一座大山，
                 <br />
-                若將文學視為一座大山，這條時而使人喜悅，時而使人困頓的路途中，
+                這條時而使人喜悅，時而使人困頓的路途中，
+                <br />
                 楊牧的著作提供無數條蹊徑，指引人們通往永恆的絕景。
                 <br />
                 <br />
-                《楊牧全集》三十冊巨著，獻給讀者、創作者、研究者
+                《楊牧全集》三十冊巨著，獻給讀者、創作者、研究者：
                 <br />
-                無論是東方的、西方的、古典的、現代的、人文的、自然的、學思的、藝術的⋯⋯
+                無論是東方的、西方的、古典的、現代的、人文的、
+                <br />
+                自然的、學思的、藝術的⋯⋯
+                <br />
                 讓我們按圖索驥，在無盡的蒼穹下，仰望楊牧創作的美麗星辰。
-                <div
-                  className="font-notoSerifTC text-2xl mt-8 tracking-wider"
-                  style={{ color: "#876625" }}
-                >
-                  ———首波珍藏預購79折
-                </div>
               </div>
             </div>
             {/* <p className="font-notoSerifTC mt-8 md:mt-14 text-xl font-normal text-black md:ml-2 text-center tracking-wider leading-loose">

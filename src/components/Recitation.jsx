@@ -19,15 +19,11 @@ const Recitation = () => {
 
   return (
     <>
-      <div className="flex-col content-center justify-center">
+      <div className="flex-col content-center justify-center mt-12">
         <p className="text-center text-black font-notoSerifTC text-lg md:text-2xl mt-[-40px] md:mx-40 leading-loose tracking-widest">
-          目宿媒體製作出品
+          目宿媒體製作出品《我們在島嶼朗讀》系列短片
           <br />
-          《我們在島嶼朗讀》系列短片
-          <br />
-          邀請作家親聲朗讀
-          <br />
-          聽見文學的聲音，重溫閱讀的感動
+          邀請楊牧親聲朗讀，聽見文學的聲音，重溫閱讀的感動
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center w-full mt-10">

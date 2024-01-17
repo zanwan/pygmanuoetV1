@@ -7,7 +7,7 @@ import { hongfang, fisfisa, facebook, instagram } from "../assets/index";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center px-8 pb-16 md:px-0 md:w-1/2 mx-auto my-16">
+    <div className="flex justify-center px-8 pb-16 md:px-0 md:w-8/12 mx-auto my-16">
       <div className="flex-col justify-start w-1/3">
         <p className="text-white text-md">出版</p>
         <a href={publisherSocialMedia[0].url} target="_blank" rel="noreferrer">
@@ -37,7 +37,7 @@ const Footer = () => {
             {yangnuSocialMedia[0].title}
           </p>
         </a>
-        <p className="text-white font-notoSerifTC text-sm">
+        <p className="text-white font-notoSerifTC text-sm mt-2 text-nowrap">
           客服信箱：hung-fan@yahoo.com.tw
         </p>
         <p className="text-white font-notoSerifTC text-sm">

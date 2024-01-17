@@ -48,9 +48,9 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
 
       <div className="flex flex-col md:flex-row w-[60px] sm:w-[100px] md:w-[125px] items-center md:pl-2 py-4">
         <img
-          className="w-[42px] h-[42px] object-contain rounded-full"
+          className="w-[42px] h-[42px] object-contain rounded-full ml-2"
           src={reviews.avatar}
-          alt="teacher1"
+          alt={reviews.name}
           loading="lazy"
         />
         <div className="flex flex-col mx-2">

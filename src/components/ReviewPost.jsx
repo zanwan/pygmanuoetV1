@@ -42,7 +42,7 @@ export const ReviewPost = ({ closeModal, article, articleBgColor }) => {
 
         <div className="bg-primary flex flex-col justify-center">
           <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
-            必推的楊牧
+            必推的楊牧 {article.recommend ? article.recommend : ""}
           </h2>
 
           <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-center px-8">

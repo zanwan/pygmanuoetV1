@@ -12,16 +12,19 @@ import Avatar4 from "./鄭毓瑜.webp";
 import Avatar5 from "./鄭樹森.webp";
 import Avatar6 from "./匿名.webp";
 import Avatar7 from "./葉步榮.webp";
+import Avatar8 from "./楊澤.webp";
+import Avatar9 from "./奚密.webp";
+import Avatar10 from "./須文蔚.webp";
 
-import book1Cover from "./book1Cover.png";
-import book2Cover from "./book2Cover.png";
-import book3Cover from "./book3Cover.png";
-import book4Cover from "./book4Cover.png";
-import book5Cover from "./book5Cover.png";
+// import book1Cover from "./book1Cover.png";
+// import book2Cover from "./book2Cover.png";
+// import book3Cover from "./book3Cover.png";
+// import book4Cover from "./book4Cover.png";
+// import book5Cover from "./book5Cover.png";
 import extroCover from "./extroCover.webp";
 
 import ProductOpen from "./ProductOpen.webp";
-import CoverReveal from "./CoverReveal.png";
+// import CoverReveal from "./CoverReveal.png";
 
 import youngmu from "./youngmu.webp";
 
@@ -93,6 +96,12 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import eye from "./eye.svg";
 
+import title1 from "./SVG/主編掛劍.svg";
+import title2 from "./SVG/名家推薦.svg";
+import title3 from "./SVG/套書規格.svg";
+import title4 from "./SVG/常見問題.svg";
+import title5 from "./SVG/關於楊牧.svg";
+
 export {
   feature1img,
   feature2img,
@@ -105,14 +114,17 @@ export {
   Avatar5,
   Avatar6,
   Avatar7,
-  book1Cover,
-  book2Cover,
-  book3Cover,
-  book4Cover,
-  book5Cover,
+  Avatar8,
+  Avatar9,
+  Avatar10,
+  // book1Cover,
+  // book2Cover,
+  // book3Cover,
+  // book4Cover,
+  // book5Cover,
   extroCover,
   ProductOpen,
-  CoverReveal,
+  // CoverReveal,
   youngmu,
   poemTub1,
   poemTub2,
@@ -172,4 +184,9 @@ export {
   facebook,
   instagram,
   eye,
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { grow } from "../assets";
 import styles from "../style";
 
-export const PoemBLock = () => {
+export const PoemBLock = ({ poem1, poem2, poemTitle }) => {
   const sectionStyle = {
     backgroundImage: `url(${grow})`,
   };
@@ -12,14 +12,14 @@ export const PoemBLock = () => {
       className="relative h-[240px] md:h-[300px] bg-cover bg-center"
       style={sectionStyle}
     >
-      <div className="absolute top-20 md:top-20 left-0 right-0 bottom-0 text-center">
-        <p className="font-notoSerifTC font-medium text-xl md:text-3xl tracking-wider leading-relaxed">
-          我在探索一條航線，傾全力
+      <div className="absolute top-20 md:top-22 left-0 right-0 bottom-0 text-center">
+        <div className="inline-block font-notoSerifTC font-medium text-xl md:text-3xl tracking-wider leading-loose text-gray-700">
+          {poem1}
           <br />
-          將歲月顯示在傲岸的額
+          <div className="mt-1">{poem2}</div>
           <br />
-          <span className="text-sm md:text-xl">〈時光命題〉</span>
-        </p>
+          <div className="text-sm md:text-xl">{poemTitle}</div>
+        </div>
       </div>
     </div>
   );

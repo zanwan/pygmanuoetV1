@@ -23,9 +23,14 @@ import {
   reviewNote1,
   reviewNote2,
   reviewNote3,
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
 } from "./assets";
 
-import { reviews, product } from "./constants/index.js";
+import { reviews } from "./constants/index.js";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden snap-y">
@@ -45,7 +50,11 @@ const App = () => (
 
     <div className={`bg-primary  ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <PoemBLock />
+        <PoemBLock
+          poem1={"詩以有限的篇幅作無窮的擴充，"}
+          poem2={"帶領你選擇真實。"}
+          poemTitle={"《一首詩的完成》"}
+        />
       </div>
     </div>
 
@@ -60,7 +69,7 @@ const App = () => (
       id="editor"
     >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"主編掛劍"} />
+        <SectionTitle title={title1} />
       </div>
     </div>
 
@@ -72,10 +81,10 @@ const App = () => (
 
     <div
       className={`bg-primary ${styles.flexStart} scroll-mt-36 snap-start`}
-      id="features"
+      id="recommendation"
     >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"眾家推崇"} />
+        <SectionTitle title={title2} />
         <div className="mt-[-62px] mx-auto px-4 md:px-0 w-full md:w-6/12 text-center text-lg md:text-2xl text-yellow-900 font-notoSerifTC tracking-wide subpixel-antialiased leading-relaxed">
           <br />
           奚密・張力・許又方・陳育虹
@@ -151,10 +160,10 @@ const App = () => (
 
     <div
       className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`}
-      id="product"
+      id="books"
     >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"套書規格"} />
+        <SectionTitle title={title3} />
       </div>
     </div>
 
@@ -170,9 +179,12 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div
+      className={`bg-primary ${styles.flexStart} scroll-mt-24 snap-start`}
+      id="aboutYangmu"
+    >
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"關於楊牧"} />
+        <SectionTitle title={title5} />
       </div>
     </div>
 
@@ -182,9 +194,13 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-primary  ${styles.flexStart} mt-4`}>
       <div className={`${styles.boxWidth}`}>
-        <SectionTitle title={"聽見文學的聲音"} />
+        <PoemBLock
+          poem1={"我在探索一條航線，傾全力"}
+          poem2={"將歲月顯示在傲岸的額"}
+          poemTitle={"〈時光命題〉"}
+        />
       </div>
     </div>
 
@@ -206,10 +222,10 @@ const App = () => (
     </div>
 
     <div
-      className={`bg-primary ${styles.paddingX} ${styles.flexStart} mt-24 scroll-mt-56 snap-start`}
+      className={`bg-primary ${styles.flexStart} scroll-mt-56 snap-start mt-[-50px]  ss:mt-[-130px] sm:mt-[-170px] md:mt-[-280px] lg:mt-[-380px]`}
       id="purchase"
     >
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxfullWidth}`}>
         <Purchase />
       </div>
     </div>
@@ -231,7 +247,9 @@ const App = () => (
     >
       <div className={`${styles.boxfullWidth}`}>
         <div className="mt-2">
-          <p className="font-[ChenYuluoyan] text-6xl text-center">常見問題</p>
+          <p className="font-notoSerifTC text-4xl font-semibold text-center">
+            常見問題
+          </p>
           <hr className="w-full md:w-1/2 mx-auto mt-4 border-black" />
         </div>
         <Question />
