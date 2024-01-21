@@ -15,6 +15,7 @@ import Avatar7 from "./葉步榮.webp";
 import Avatar8 from "./楊澤.webp";
 import Avatar9 from "./奚密.webp";
 import Avatar10 from "./須文蔚.webp";
+import Avatar11 from "./陳育虹.webp";
 
 // import book1Cover from "./book1Cover.png";
 // import book2Cover from "./book2Cover.png";
@@ -102,6 +103,9 @@ import title3 from "./SVG/套書規格.svg";
 import title4 from "./SVG/常見問題.svg";
 import title5 from "./SVG/關於楊牧.svg";
 
+import subtitleCenter from "./feature1-Subtitle-center.webp";
+import subtitleLeft from "./feature1-Subtitle-left.webp";
+
 export {
   feature1img,
   feature2img,
@@ -117,6 +121,7 @@ export {
   Avatar8,
   Avatar9,
   Avatar10,
+  Avatar11,
   // book1Cover,
   // book2Cover,
   // book3Cover,
@@ -189,4 +194,6 @@ export {
   title3,
   title4,
   title5,
+  subtitleCenter,
+  subtitleLeft,
 };

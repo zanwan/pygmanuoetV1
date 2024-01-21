@@ -16,6 +16,10 @@ import Footer from "./Footer";
 import { PoemBLock } from "./PoemBLock";
 import EditorLetter from "./EditorLetter";
 import BookGroup from "./BookGroup";
+import EditorReviewPost from "./EditorReviewPost";
+import ModalTest from "./ModalTest";
+import ReviewquoteGroup from "./ReviewquoteGroup";
+import ReviewPost from "./ReviewPost";
 // import BookModal from "./BookModal";
 
 // import ReviewPost from "./ReviewPost";
@@ -39,4 +43,8 @@ export {
   PoemBLock,
   EditorLetter,
   BookGroup,
+  EditorReviewPost,
+  ModalTest,
+  ReviewquoteGroup,
+  ReviewPost,
 };

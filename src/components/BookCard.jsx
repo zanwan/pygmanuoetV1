@@ -26,7 +26,7 @@ const BookCard = ({ product, height }) => {
         <img
           src={product.images[0]}
           alt=""
-          className="object-contain md:h-[220px] mx-auto mt-4 md:mt-8 "
+          className="object-contain h-[400px] md:h-[250px] mx-auto mt-4 md:mt-8 "
         />
         <div className=" flex flex-col justify-between items-center">
           <div className="mx-8 mt-2 mb-4 md:my-8">
@@ -37,7 +37,7 @@ const BookCard = ({ product, height }) => {
         </div>
       </div>
 
-      {isModalOpen && <BookModal closeModal={closeModal} book={product} />}
+      {/* {isModalOpen && <BookModal closeModal={closeModal} book={product} />} */}
     </div>
   );
 };

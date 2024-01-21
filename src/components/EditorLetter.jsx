@@ -1,7 +1,7 @@
 import { editorsLetter, Avatar7, editorNamebg } from "../assets";
 import React, { useState } from "react";
 
-import ReviewPost from "./ReviewPost";
+import EditorReviewPost from "./EditorReviewPost";
 
 const EditorLetter = ({ reviews, bgColor }) => {
   const sectionStyle = {
@@ -16,7 +16,6 @@ const EditorLetter = ({ reviews, bgColor }) => {
 
   const openModal = () => {
     setIsOpen(true);
-
     document.body.style.overflow = "hidden";
   };
 
@@ -46,30 +45,18 @@ const EditorLetter = ({ reviews, bgColor }) => {
         </div>
 
         <div className="w-full md:w-[550px] mx-auto  text-center flex flex-col justify-center mt-12 md:mt-8">
-          <div className="font-notoSerifTC font-bold text-2xl md:text-4xl mb-8 mt-24">
-            有人在早晨遞給我一首詩
-          </div>
+          <div className="font-notoSerifTC font-bold text-2xl md:text-4xl mb-8 mt-16"></div>
           <p className="indent-8 text-wrap text-justify font-notoSerifTC font-regular text-md md:text-lg tracking-wider leading-relaxed px-4 md:px-0">
-            我沒問過楊牧的筆名，他早年 日語，楊與葉同音；楊先生，ya
-            sam，我猜葉珊從楊桑來的。
+            楊牧的文學很寬廣，詩、散文、翻譯、學術論著，大概只有小說沒寫，但我個人覺得他的《奇萊前書》其實就像小說似的。這套全集希望按照楊牧的編輯理念來做，因為他做編輯的時間，比我更長久，編輯的經驗很豐富，又很龜毛，意見很多。
             <br />
             <br />
-            葉珊筆名，高一才開始；我們高中同班，另有一個葉同學，我們三個滿要好的，很好高興，三個人都姓葉。
-            後來我在編楊牧書簡，發現一封信，1969年，葉珊寫了一封信給瘂弦，他寫得短，說他要改筆名，改成楊葉珊，冠了個楊字；那封信很短，有改了很多字，我覺他有點情緒化。
+            全集三十冊中，四冊內文是依洪範原版付梓，其他二十六冊都重新排印。新製的內容，除了《唐詩選集》，主要就是別卷裡的八冊（集外集、書信、楊牧手筆的洪範書介等）。楊牧向來是以文字閱讀為重，版面力求樸素。他最不喜歡文章旁邊有編輯寫案語，說這篇文章如何如何。如果一定要有編案，他也會說愈簡單愈好，不要因為編者而強解作者之意。
             <br />
             <br />
-            後來他再寫信給瘂弦，署名仍是葉珊
+            楊牧很堅持文學作品是具有多義性的，再好的評論家有時也無法評論得很周詳，總會限制住讀者的看法。他的書後來再版或出選集時，也都把別人的序統統拿掉，連自己寫的書介，都不要了，空白。
             <br />
             <br />
-            楊牧每天一大早，跑去看報紙，有沒有登出來，所以他常鼓勵年輕人投稿，因為他自己從小有投稿的緊張興奮的成就感。
-            主編校刊，刊頭《怒濤》，把學校嚇壞了，教官跑來說你年紀輕輕有什麼好怒，怕我們與左派的呼應，
-            發行一期就停掉了，很有趣。
-            <br />
-            <br />
-            我與楊牧在學校都不太用功，對數學理化無法進入狀況。奇來前寫寫被數學老師罵，上海富態的老師，每天都穿旗袍，
-            楊牧背不出數學公式，楊牧覺得她罵得很好聽；說老師罵他糊理糊塗，迷迷糊糊，用上海話罵；後來有次他自己罵自己這兩句，罵出來。
-            他到高中，數學仍不好
-            <br />
+            楊牧寫作，完全不理市場口味這一回事。這次新製的書信集裡，有一篇他寫給郭松棻的信，裡面就說，他沒辦法跟讀者打成一片，因為他是要帶領讀者的，沒辦法去跟讀者隨和。講起來他是很高傲的那種，但我認為，這才是另一種文學的境界。
             <br />
           </p>
           <div className="flex flex-row justify-center mt-8 pt-2 mx-auto">
@@ -87,13 +74,12 @@ const EditorLetter = ({ reviews, bgColor }) => {
       </div>
 
       {isOpen && (
-        <ReviewPost
+        <EditorReviewPost
           closeModal={() => {
             setIsOpen(false);
             closeModal();
           }}
           article={reviews}
-          articleBgColor={bgColor}
         />
       )}
     </div>

@@ -23,7 +23,7 @@ const Purchase = () => {
           className="font-notoSerifTC text-2xl mt-8 tracking-wider text-center"
           style={{ color: "#876625" }}
         >
-          首波珍藏預購79折
+          2月2日起首波珍藏預購79折
         </div>
       </div>
     </div>

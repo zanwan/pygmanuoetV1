@@ -5,7 +5,7 @@ export const ReviewPost = ({ closeModal, article }) => {
     <div
       onClick={closeModal}
       className="fixed z-10 left-0 right-0 top-0 bottom-0 overflow-y-auto bg-black bg-opacity-80 flex items-center justify-center"
-      aria-labelledby="review-post"
+      aria-labelledby="editor-review-post"
       role="dialog"
       aria-modal="true"
     >
@@ -43,7 +43,7 @@ export const ReviewPost = ({ closeModal, article }) => {
           </div>
 
           <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-8">
-            {article.content.split("\n").map((line, index) => (
+            {article.article.split("\n").map((line, index) => (
               <p key={index} className="indent-8">
                 {line}
                 <br />
@@ -52,21 +52,21 @@ export const ReviewPost = ({ closeModal, article }) => {
             ))}
           </div>
 
-          <div className="bg-primary flex flex-col justify-center">
-            <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
-              必推的楊牧
-            </h2>
+          {/* <div className="bg-primary flex flex-col justify-center">
+          <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
+            必推的楊牧
+          </h2>
 
-            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-center px-8">
-              {article.quickAnswer.split("\n").map((line, index) => (
-                <p key={index} className="indent-8">
-                  {line}
-                  <br />
-                  <br />
-                </p>
-              ))}
-            </div>
+          <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-center px-8">
+            {article.quickAnswer.split("\n").map((line, index) => (
+              <p key={index} className="indent-8">
+                {line}
+                <br />
+                <br />
+              </p>
+            ))}
           </div>
+        </div> */}
 
           <div className="flex justify-center text-center">
             <button

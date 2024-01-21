@@ -4,16 +4,16 @@ import { eye } from "../assets";
 
 import ReviewPost from "./ReviewPost";
 
-const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
+const ReviewCard = ({ reviews, bgStyle, key }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
-    setIsOpen(true);
+    // setIsOpen(true);
     document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
-    setIsOpen(false);
+    // setIsOpen(false);
     document.body.style.overflow = "unset";
   };
 
@@ -26,8 +26,10 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
       className="w-full flex flex-row-reverse justify-end items-center cursor-pointer bg-cover bg-center hover:bg-secondary hover:text-yellow-700 transition duration-300 ease-in-out"
       style={bgsvg}
       onClick={() => {
+        setIsOpen(true);
         openModal();
       }}
+      key={key}
     >
       <div className="md:hidden flex flex-row justify-center align-middle  mx-auto">
         <img
@@ -60,13 +62,15 @@ const ReviewCard = ({ reviews, bgColor, bgStyle }) => {
         </div>
       </div>
 
-      {isOpen && (
+      {/* {isOpen && (
         <ReviewPost
-          closeModal={closeModal}
+          closeModal={() => {
+            setIsOpen(false);
+            closeModal();
+          }}
           article={reviews}
-          articleBgColor={bgColor}
         />
-      )}
+      )} */}
     </div>
   );
 };
