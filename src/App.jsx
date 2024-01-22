@@ -89,7 +89,7 @@ function App() {
       </div>
 
       <div
-        className={`bg-primary ${styles.flexStart} scroll-mt-36 snap-start`}
+        className={`bg-primary ${styles.flexStart} scroll-mt-[52px] snap-start`}
         id="recommendation"
       >
         <div className={`${styles.boxWidth}`}>

@@ -57,7 +57,7 @@ export const ReviewPost = ({ closeModal, article }) => {
               必推的楊牧
             </h2>
 
-            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-center px-8">
+            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-justify px-8">
               {article.quickAnswer.split("\n").map((line, index) => (
                 <p key={index} className="indent-8">
                   {line}

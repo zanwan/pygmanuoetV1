@@ -46,19 +46,27 @@ const EditorLetter = ({ reviews, bgColor }) => {
 
         <div className="w-full md:w-[550px] mx-auto  text-center flex flex-col justify-center mt-12 md:mt-8">
           <div className="font-notoSerifTC font-bold text-2xl md:text-4xl mb-8 mt-16"></div>
-          <p className="indent-8 text-wrap text-justify font-notoSerifTC font-regular text-md md:text-lg tracking-wider leading-relaxed px-4 md:px-0">
-            楊牧的文學很寬廣，詩、散文、翻譯、學術論著，大概只有小說沒寫，但我個人覺得他的《奇萊前書》其實就像小說似的。這套全集希望按照楊牧的編輯理念來做，因為他做編輯的時間，比我更長久，編輯的經驗很豐富，又很龜毛，意見很多。
+          <div className="text-wrap text-justify font-notoSerifTC font-regular text-md md:text-lg tracking-wider leading-relaxed px-4 md:px-0">
+            <p className="indent-[36px]">
+              楊牧的文學很寬廣，詩、散文、翻譯、學術論著，大概只有小說沒寫，但我個人覺得他的《奇萊前書》其實就像小說似的。這套全集希望按照楊牧的編輯理念來做，因為他做編輯的時間，比我更長久，編輯的經驗很豐富，又很龜毛，意見很多。
+            </p>
             <br />
+
+            <p className="indent-[36px]">
+              全集三十冊中，四冊內文是依洪範原版付梓，其他二十六冊都重新排印。新製的內容，除了《唐詩選集》，主要就是別卷裡的八冊（集外集、書信、楊牧手筆的洪範書介等）。楊牧向來是以文字閱讀為重，版面力求樸素。他最不喜歡文章旁邊有編輯寫案語，說這篇文章如何如何。如果一定要有編案，他也會說愈簡單愈好，不要因為編者而強解作者之意。
+            </p>
             <br />
-            全集三十冊中，四冊內文是依洪範原版付梓，其他二十六冊都重新排印。新製的內容，除了《唐詩選集》，主要就是別卷裡的八冊（集外集、書信、楊牧手筆的洪範書介等）。楊牧向來是以文字閱讀為重，版面力求樸素。他最不喜歡文章旁邊有編輯寫案語，說這篇文章如何如何。如果一定要有編案，他也會說愈簡單愈好，不要因為編者而強解作者之意。
+
+            <p className="indent-[36px]">
+              楊牧很堅持文學作品是具有多義性的，再好的評論家有時也無法評論得很周詳，總會限制住讀者的看法。他的書後來再版或出選集時，也都把別人的序統統拿掉，連自己寫的書介，都不要了，空白。
+            </p>
             <br />
+
+            <p className="indent-[36px]">
+              楊牧寫作，完全不理市場口味這一回事。這次新製的書信集裡，有一篇他寫給郭松棻的信，裡面就說，他沒辦法跟讀者打成一片，因為他是要帶領讀者的，沒辦法去跟讀者隨和。講起來他是很高傲的那種，但我認為，這才是另一種文學的境界。
+            </p>
             <br />
-            楊牧很堅持文學作品是具有多義性的，再好的評論家有時也無法評論得很周詳，總會限制住讀者的看法。他的書後來再版或出選集時，也都把別人的序統統拿掉，連自己寫的書介，都不要了，空白。
-            <br />
-            <br />
-            楊牧寫作，完全不理市場口味這一回事。這次新製的書信集裡，有一篇他寫給郭松棻的信，裡面就說，他沒辦法跟讀者打成一片，因為他是要帶領讀者的，沒辦法去跟讀者隨和。講起來他是很高傲的那種，但我認為，這才是另一種文學的境界。
-            <br />
-          </p>
+          </div>
           <div className="flex flex-row justify-center mt-8 pt-2 mx-auto">
             <button
               className="font-notoSerifTC font-medium text-base text-right no-underline bg-white px-6 py-1 rounded-md hover:bg-secondary hover:text-black transition duration-300 ease-in-out"
