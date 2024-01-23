@@ -7,7 +7,7 @@ const HeroFeature1 = () => {
   };
 
   return (
-    <div className="w-full flex flex-col mb-[-80px] md:flex-row md:pt-6 md:mb-[-60px] justify-start item-center md:justify-center md:items-start">
+    <div className="w-full flex flex-col mb-[-50px] md:flex-row md:pt-6 md:mb-[-30px] justify-start item-center md:justify-center md:items-start ">
       <img
         src={features[1].img}
         alt="hero"

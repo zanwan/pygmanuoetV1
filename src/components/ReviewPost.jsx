@@ -34,7 +34,7 @@ export const ReviewPost = ({ closeModal, article }) => {
             />
             <h2 className="font-notoSerifTC text-xl md:text-2xl font-medium mt-1 flex flex-col justify-start">
               {article.name}{" "}
-              <span className="text-gray-900 text-sm">
+              <span className="text-gray-900 text-sm pr-2 md:pr-0">
                 {article.nameCard.split("\n").map((line, index) => (
                   <p key={index}>{line}</p>
                 ))}
@@ -42,7 +42,7 @@ export const ReviewPost = ({ closeModal, article }) => {
             </h2>
           </div>
 
-          <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-8">
+          <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-2 md:px-8">
             {article.content.split("\n").map((line, index) => (
               <p key={index} className="indent-8">
                 {line}
@@ -57,7 +57,7 @@ export const ReviewPost = ({ closeModal, article }) => {
               必推的楊牧
             </h2>
 
-            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-justify px-8">
+            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-justify px-4  md:px-8">
               {article.quickAnswer.split("\n").map((line, index) => (
                 <p key={index} className="indent-8">
                   {line}

@@ -44,7 +44,7 @@ const EditorLetter = ({ reviews, bgColor }) => {
           </div>
         </div>
 
-        <div className="w-full md:w-[550px] mx-auto  text-center flex flex-col justify-center mt-12 md:mt-8">
+        <div className="w-full md:w-[550px] mx-auto px-4 md:px-0 text-center flex flex-col justify-center mt-12 md:mt-8">
           <div className="font-notoSerifTC font-bold text-2xl md:text-4xl mb-8 mt-16"></div>
           <div className="text-wrap text-justify font-notoSerifTC font-regular text-md md:text-lg tracking-wider leading-relaxed px-4 md:px-0">
             <p className="indent-[36px]">

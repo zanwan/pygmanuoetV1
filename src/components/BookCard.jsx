@@ -28,7 +28,7 @@ const BookCard = ({ product, height }) => {
           alt=""
           className="object-contain h-[400px] md:h-[250px] mx-auto mt-4 md:mt-8 "
         />
-        <div className=" flex flex-col justify-between items-center">
+        <div className="flex flex-col justify-between items-center mt-[-20px]">
           <div className="mx-8 mt-2 mb-4 md:my-8">
             <p className="font-notoSerifTC font-semibold text-2xl text-center">
               {product.title}

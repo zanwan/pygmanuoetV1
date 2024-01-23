@@ -42,7 +42,7 @@ export const ReviewPost = ({ closeModal, article }) => {
             </h2>
           </div>
 
-          <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-8">
+          <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-2 md:px-8">
             {article.article.split("\n").map((line, index) => (
               <p key={index} className="indent-[38px]">
                 {line}

@@ -4,7 +4,7 @@ import { ProductOpen, poemquote2, grass, cloud } from "../assets";
 const ProductFeature = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center ">
-      <p className="font-notoSerifTC text-md md:text-xl font-normal text-black ml-2 text-center tracking-wide subpixel-antialiased leading-loose mb-4">
+      <p className="font-notoSerifTC text-md md:text-xl font-normal text-black ml-2 text-center tracking-wide subpixel-antialiased leading-loose mb-4 px-6">
         {product[0].content.split("\n").map((line, index) => (
           <span key={index}>
             {line}
@@ -13,7 +13,7 @@ const ProductFeature = () => {
         ))}
       </p>
       <p className="font-notoSerifTC text-md text-gray-800">
-        (點擊書籍圖片查看更多詳細資訊)
+        ▼ 點擊書籍圖片查看更多詳細資訊
       </p>
     </div>
     // <div className="w-full flex flex-col-reverse md:flex-row py-6 justify-end items-center">

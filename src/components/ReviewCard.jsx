@@ -31,7 +31,7 @@ const ReviewCard = ({ reviews, bgStyle, key }) => {
       }}
       key={key}
     >
-      <div className="md:hidden flex flex-row justify-center align-middle  mx-auto">
+      <div className="md:hidden flex flex-row justify-center align-middle  mx-auto ">
         <img
           src={eye}
           className="w-[20px] h-[20px]"
@@ -42,13 +42,13 @@ const ReviewCard = ({ reviews, bgStyle, key }) => {
         ></img>
       </div>
 
-      <div className="ml-3 w-[220px] sm:w-4/6 md:w-4/6">
-        <p className="py-2 text-center md:text-left font-notoSerifTC font-bold text-xl md:text-[18px] tracking-wide subpixel-antialiased">
+      <div className="w-[220px] sm:w-4/6 md:w-4/6 ">
+        <p className="py-2 text-center md:text-center font-notoSerifTC font-bold text-xl md:text-[18px] tracking-wide subpixel-antialiased">
           {reviews.header}
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row w-[60px] sm:w-[100px] md:w-[125px] items-center md:pl-2 py-4">
+      <div className="flex flex-col md:flex-row w-[60px] sm:w-[100px] md:w-[125px] items-center md:pl-2 py-4 ">
         <img
           className="w-[42px] h-[42px] object-contain rounded-full ml-2"
           src={reviews.avatar}
@@ -61,16 +61,6 @@ const ReviewCard = ({ reviews, bgStyle, key }) => {
           </div>
         </div>
       </div>
-
-      {/* {isOpen && (
-        <ReviewPost
-          closeModal={() => {
-            setIsOpen(false);
-            closeModal();
-          }}
-          article={reviews}
-        />
-      )} */}
     </div>
   );
 };

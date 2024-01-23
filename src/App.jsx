@@ -51,12 +51,6 @@ function App() {
         </div>
       </div>
 
-      {/* <div className={`bg-primary  ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <ModalTest />
-        </div>
-      </div> */}
-
       <div className={`bg-primary  ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <PoemBLock
