@@ -68,6 +68,24 @@ export const ReviewPost = ({ closeModal, article }) => {
             </div>
           </div>
 
+          {article.fullReview && (
+            <div>
+              <div className="font-notoSerifTC text-xl md:text-3xl font-bold my-8 text-center text-black ">
+                {article.articleTitle}
+              </div>
+
+              <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-2 md:px-8">
+                {article.article.split("\n").map((line, index) => (
+                  <p key={index} className="indent-[38px]">
+                    {line}
+                    <br />
+                    <br />
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="flex justify-center text-center">
             <button
               type="button"
