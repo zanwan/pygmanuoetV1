@@ -51,9 +51,12 @@ export const ReviewquoteGroup = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-1 gap-2 mt-4 md:mx-[250px]">
+      <div className="grid md:grid-cols-2 gap-2 mt-4">
         <div onClick={() => openModal(reviews[7])}>
           <ReviewCard reviews={reviews[7]} bgStyle={reviewNote3} />
+        </div>
+        <div onClick={() => openModal(reviews[9])}>
+          <ReviewCard reviews={reviews[9]} bgStyle={reviewNote3} />
         </div>
       </div>
 

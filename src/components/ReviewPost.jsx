@@ -1,6 +1,6 @@
 import { close } from "../assets";
 
-export const ReviewPost = ({ closeModal, article }) => {
+export const ReviewPost = ({ closeModal, article, shortArticle }) => {
   return (
     <div
       onClick={closeModal}
@@ -41,32 +41,35 @@ export const ReviewPost = ({ closeModal, article }) => {
               </span>
             </h2>
           </div>
+          {article.shortArticle && (
+            <>
+              <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-2 md:px-8">
+                {article.content.split("\n").map((line, index) => (
+                  <p key={index} className="indent-8">
+                    {line}
+                    <br />
+                    <br />
+                  </p>
+                ))}
+              </div>
 
-          <div className="font-notoSerifTC font-normal text-lg tracking-wide subpixel-antialiased text-justify text-black px-2 md:px-8">
-            {article.content.split("\n").map((line, index) => (
-              <p key={index} className="indent-8">
-                {line}
-                <br />
-                <br />
-              </p>
-            ))}
-          </div>
+              <div className="bg-primary flex flex-col justify-center">
+                <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
+                  必推的楊牧
+                </h2>
 
-          <div className="bg-primary flex flex-col justify-center">
-            <h2 className="font-notoSerifTC text-xl md:text-2xl font-bold my-4 text-center text-black ">
-              必推的楊牧
-            </h2>
-
-            <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-justify px-4  md:px-8">
-              {article.quickAnswer.split("\n").map((line, index) => (
-                <p key={index} className="indent-8">
-                  {line}
-                  <br />
-                  <br />
-                </p>
-              ))}
-            </div>
-          </div>
+                <div className="font-notoSerifTC font-normal text-md tracking-wide subpixel-antialiased text-black text-justify px-4  md:px-8">
+                  {article.quickAnswer.split("\n").map((line, index) => (
+                    <p key={index} className="indent-8">
+                      {line}
+                      <br />
+                      <br />
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
 
           {article.fullReview && (
             <div>
@@ -85,7 +88,6 @@ export const ReviewPost = ({ closeModal, article }) => {
               </div>
             </div>
           )}
-
           <div className="flex justify-center text-center">
             <button
               type="button"
