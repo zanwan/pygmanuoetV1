@@ -9,7 +9,7 @@ export const ReviewPost = ({ closeModal, article, shortArticle }) => {
       role="dialog"
       aria-modal="true"
     >
-      <div className="relative py-4 px-2 md:px-6 ">
+      <div className="relative py-4 px-2 max-w-sm sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full 2xl:max-w-xl  md:px-6 ">
         <button
           type="button"
           className=" bg-white md:bg-primary z-20 absolute top-[60px] md:top-4 right-[30px] md:right-0 inline-flex justify-center rounded-full border border-transparent px-2 py-2 md:px-4 md:py-4 font-light text-black hover:bg-[#C7BEAD] sm:ml-3 sm:w-auto sm:text-sm"
